@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # The steps of the gate that run the Go reference live. Run it on a Linux host that has cargo and Go, when a
-# change touches crates/, conformance/ or Cargo.lock. The everyday gate, which needs no Go, is
-# scripts/ci-local.sh; the two scripts together hold every step, and CI runs this one in
-# .github/workflows/oracle.yml.
+# change touches crates/, conformance/, profile/, Cargo.toml, Cargo.lock or rust-toolchain.toml. The everyday
+# gate, which needs no Go, is scripts/ci-local.sh; the two scripts together hold every step, and CI runs this
+# one in .github/workflows/oracle.yml.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 

@@ -1,7 +1,8 @@
 name: oracle
 
 # The steps of scripts/ci-oracle.sh, which run the Go reference live: on demand, once a week, and when a change
-# touches the interpreter, the conformance tools or the lock file.
+# touches the interpreter, the conformance tools, the profile, the workspace manifest, the lock file, the toolchain
+# or this workflow.
 
 on:
   push:
@@ -9,14 +10,22 @@ on:
     paths:
       - 'conformance/**'
       - 'crates/**'
+      - 'profile/**'
+      - 'Cargo.toml'
       - 'Cargo.lock'
+      - 'rust-toolchain.toml'
       - 'scripts/ci-oracle.sh'
+      - '.github/workflows/oracle.yml'
   pull_request:
     paths:
       - 'conformance/**'
       - 'crates/**'
+      - 'profile/**'
+      - 'Cargo.toml'
       - 'Cargo.lock'
+      - 'rust-toolchain.toml'
       - 'scripts/ci-oracle.sh'
+      - '.github/workflows/oracle.yml'
   schedule:
     - cron: '17 3 * * 1'
   workflow_dispatch:

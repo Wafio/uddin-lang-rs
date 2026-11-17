@@ -15,7 +15,7 @@ The requirements are in the README. The gate runs on Linux and needs no Go, beca
 scripts/ci-local.sh
 ```
 
-If your change touches `crates/`, `conformance/` or `Cargo.lock`, also run the checks that run the reference interpreter live. They need Go:
+If your change touches `crates/`, `conformance/`, `profile/`, `Cargo.toml`, `Cargo.lock` or `rust-toolchain.toml`, also run the checks that run the reference interpreter live. They need Go:
 
 ```sh
 scripts/ci-oracle.sh

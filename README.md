@@ -65,8 +65,9 @@ The steps that run the Go reference live are a second script, and they need Go:
 It builds, formats, vets and tests the oracle in `conformance/oracle-go`, checks that the oracle still gives the
 recorded Go results of the corpus, compares `uddin check` with the oracle on 20,000 generated sources, and
 compares runs of 10,000 generated programs under the production limits and under a small set. Run it when a
-change touches `crates/`, `conformance/` or `Cargo.lock`. CI runs it in `.github/workflows/oracle.yml` on such
-changes, once a week and on demand. It sets the same time zone as the gate.
+change touches `crates/`, `conformance/`, `profile/`, `Cargo.toml`, `Cargo.lock` or `rust-toolchain.toml`. CI
+runs it in `.github/workflows/oracle.yml` on such changes (and on changes to that workflow), once a week and on
+demand. It sets the same time zone as the gate.
 
 `fuzz/` holds the cargo-fuzz targets for the lexer, the parser and `check`; it is not part of the gate (see
 `fuzz/README.md`).
