@@ -46,6 +46,9 @@ On a Linux host with `rustup` and Go, from the repo root:
 
     scripts/ci-local.sh
 
+The gate runs in the time zone the corpus was recorded in (`TZ=Asia/Jakarta`), because the date builtins read the
+zone of the host. For `cargo test` by hand in another zone, set `TZ=Asia/Jakarta` too.
+
 It checks that no agent material is tracked, then runs `cargo fmt --all --check`, `cargo clippy -D warnings` and
 `cargo test`, builds and tests the Go oracle, checks the recorded Go results of the corpus, compares `uddin check`
 with those results and with the oracle on 20,000 generated sources, runs every script of the run corpus through

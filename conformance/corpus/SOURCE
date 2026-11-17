@@ -12,6 +12,9 @@ waf-ctx, limits, timing: written by hand in oracle-go/cmd/extract/handwritten.go
   control plane, as scripts that run with the request context on the case line; limits holds the nesting limit at its
   boundary; timing holds the scripts that only the 5 ms deadline stops.
 
+Time zone of the recording: Asia/Jakarta (TZ). The date builtins read the zone of the host, so the results of the
+lib-dates group hold in that zone only; scripts/ci-local.sh sets it.
+
 Cases per group (check, run):
   fork-tests    340  281
   engine-tests  101   82

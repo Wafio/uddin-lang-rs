@@ -3,6 +3,10 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# The date builtins read the zone of the host, as the reference does, and the corpus was recorded in this zone
+# (conformance/corpus/SOURCE). Another zone gives other results for the dates written with an offset.
+export TZ=Asia/Jakarta
+
 echo '== agent material'
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   scripts/check-ai.sh
