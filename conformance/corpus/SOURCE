@@ -6,22 +6,51 @@ examples: every .din file under examples/ and example_usages/ of that commit.
 engine-tests: the *_test.go files of internal/engine of the wafio-cp-backend repository at commit
   99c94588f6662d59f60ca42c61b66274d5613287 that call EvalScriptRules, EvalScriptRulesWithBudget or CompileScript,
   except custom_rules_bench_test.go. The engine files last changed at c91fde225494cadb91490085c00b88c600c6cd31.
-bench: the six scripts of custom_rules_bench_test.go in that repository, with the request context of that file.
+  Both commits are from before the public history of that repository, which starts at
+  451b6f17d69b172dd0737864257118e115ab8a9e. Of the files the cases come from (custom_rules_test.go,
+  custom_rules_sandbox_test.go, custom_rules_concurrency_test.go, custom_rules_budget_internal_test.go,
+  script_content_incomplete_internal_test.go and script_golden_test.go) only custom_rules_test.go is in that commit,
+  and it differs from the one recorded here, so the cases stay as they were extracted.
+bench: the six scripts of custom_rules_bench_test.go in that repository, with the request context of that file. That
+  file is not in the public history.
 waf-ctx, limits, timing: written by hand in oracle-go/cmd/extract/handwritten.go, not taken from any file. waf-ctx
   mirrors the tests of interpreter/fn_wafio_test.go of the fork and the context probes of script_golden_test.go of the
   control plane, as scripts that run with the request context on the case line; limits holds the nesting limit at its
   boundary; timing holds the scripts that only the 5 ms deadline stops.
+lang, core-limits: written by hand in oracle-go/cmd/extract/corelang.go (language semantics; each limit at, below
+  and above its boundary).
+lib-*: written by hand in oracle-go/cmd/extract, one file for each group (lib_<name>.go; lib-regex-limits is in
+  lib_regex.go and lib-dates-clock in lib_dates.go).
+regex/facts.tsv is not a group: what the oracle recorded for the regex parser and for searches (written by cmd/extract
+  with UDDIN_REGEX_FACTS=<path>), read by the unit tests of crates/uddin-std.
 
 Time zone of the recording: Asia/Jakarta (TZ). The date builtins read the zone of the host, so the results of the
 lib-dates group hold in that zone only; scripts/ci-local.sh and scripts/ci-oracle.sh set it.
 
 Cases per group (check, run):
-  fork-tests    340  281
-  engine-tests  101   82
-  bench           6    6
-  examples       53   28
-  waf-ctx       213  213
-  limits         26   26
-  timing          3    3
+  fork-tests          340   281
+  engine-tests        101    82
+  bench                 6     6
+  examples             53    28
+  waf-ctx             213   213
+  limits               26    26
+  timing                3     3
+  lang                186   175
+  core-limits         304   299
+  lib-collections     695   695
+  lib-conv             96    96
+  lib-dates           190   190
+  lib-dates-clock       5     5
+  lib-json            374   373
+  lib-lists          3062  3062
+  lib-machine         330   330
+  lib-math            144   144
+  lib-paths            37    37
+  lib-regex           957   957
+  lib-regex-limits    105   105
+  lib-shared           62    62
+  lib-sort            363   363
+  lib-stats           237   237
+  lib-strings         180   180
 
 Cases of the run corpus that carry a request context: bench 6, waf-ctx 185; every other case runs with an empty one.
