@@ -3,14 +3,13 @@ Inputs of the extraction (cmd/extract in ../oracle-go). Results are in the *.go.
 fork-tests: the *_test.go files of the Go fork at commit 8aae46cc78f223f430c8804b7079e86be70ea75d
   (interpreter/, the root uddin_test.go and cmd/*/), the same commit as ../oracle-go/SOURCE.
 examples: every .din file under examples/ and example_usages/ of that commit.
-engine-tests: the *_test.go files of internal/engine of the wafio-cp-backend repository at commit
-  99c94588f6662d59f60ca42c61b66274d5613287 that call EvalScriptRules, EvalScriptRulesWithBudget or CompileScript,
-  except custom_rules_bench_test.go. The engine files last changed at c91fde225494cadb91490085c00b88c600c6cd31.
-  Both commits are from before the public history of that repository, which starts at
-  451b6f17d69b172dd0737864257118e115ab8a9e. Of the files the cases come from (custom_rules_test.go,
-  custom_rules_sandbox_test.go, custom_rules_concurrency_test.go, custom_rules_budget_internal_test.go,
-  script_content_incomplete_internal_test.go and script_golden_test.go) only custom_rules_test.go is in that commit,
-  and it differs from the one recorded here, so the cases stay as they were extracted.
+engine-tests: the *_test.go files of internal/engine of the Go control plane, from before the public history of the
+  wafio-cp-backend repository (it starts at 451b6f17d69b172dd0737864257118e115ab8a9e), that call EvalScriptRules,
+  EvalScriptRulesWithBudget or CompileScript, except custom_rules_bench_test.go. Of the files the cases come from
+  (custom_rules_test.go, custom_rules_sandbox_test.go, custom_rules_concurrency_test.go,
+  custom_rules_budget_internal_test.go, script_content_incomplete_internal_test.go and script_golden_test.go) only
+  custom_rules_test.go is in the public history, and it differs from the one the cases were taken from, so the cases
+  stay as they were extracted.
 bench: the six scripts of custom_rules_bench_test.go in that repository, with the request context of that file. That
   file is not in the public history.
 waf-ctx, limits, timing: written by hand in oracle-go/cmd/extract/handwritten.go, not taken from any file. waf-ctx
