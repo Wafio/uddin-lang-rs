@@ -1,0 +1,31 @@
+# Library code touches no file, socket, process or environment variable: the host hands a script
+# in and takes the outcome out. The `uddin` binary reads stdin and writes stdout only.
+disallowed-types = [
+  { path = "std::fs::File", reason = "no file access" },
+  { path = "std::fs::OpenOptions", reason = "no file access" },
+  { path = "std::fs::DirEntry", reason = "no file access" },
+  { path = "std::fs::ReadDir", reason = "no file access" },
+  { path = "std::net::TcpListener", reason = "no network access" },
+  { path = "std::net::TcpStream", reason = "no network access" },
+  { path = "std::net::UdpSocket", reason = "no network access" },
+  { path = "std::process::Command", reason = "no process access" },
+  { path = "std::process::Child", reason = "no process access" },
+]
+disallowed-methods = [
+  { path = "std::fs::read", reason = "no file access" },
+  { path = "std::fs::read_to_string", reason = "no file access" },
+  { path = "std::fs::read_dir", reason = "no file access" },
+  { path = "std::fs::write", reason = "no file access" },
+  { path = "std::fs::create_dir", reason = "no file access" },
+  { path = "std::fs::create_dir_all", reason = "no file access" },
+  { path = "std::fs::remove_file", reason = "no file access" },
+  { path = "std::fs::remove_dir", reason = "no file access" },
+  { path = "std::fs::remove_dir_all", reason = "no file access" },
+  { path = "std::fs::rename", reason = "no file access" },
+  { path = "std::fs::copy", reason = "no file access" },
+  { path = "std::fs::metadata", reason = "no file access" },
+  { path = "std::env::var", reason = "no environment access" },
+  { path = "std::env::var_os", reason = "no environment access" },
+  { path = "std::env::vars", reason = "no environment access" },
+  { path = "std::env::vars_os", reason = "no environment access" },
+]

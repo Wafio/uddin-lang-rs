@@ -1,0 +1,281 @@
+{"id":"fork/cmd/uddin-lang/main_test.go:15:10","src":"\n\t\t// Fungsi main sederhana untuk test\n\t\tfun main():\n\t\t\tprint(\"Test script\")\n\t\t\tprint(42)\n\t\t\tprint(true)\n\t\tend\n\t\t"}
+{"id":"fork/cmd/uddin-lang/main_test.go:59:12","src":"\n\tfun main():\n\t\tprint(\"Hello, World!\")\n\t\tx = 5 + 3\n\t\tprint(\"Result: \" + str(x))\n\tend\n\t"}
+{"id":"fork/cmd/uddin-lang/main_test.go:86:45","src":"\n"}
+{"id":"fork/cmd/uddin-lang/main_test.go:139:17","src":"\n\tfun main():\n\t\tprint(\"Test from file\")\n\t\tx = 10 + 5\n\t\tprint(\"Result: \" + str(x))\n\tend\n\t"}
+{"id":"fork/cmd/uddin-lang/main_test.go:164:15","src":"\n\tfun main():\n\t\tprint(\"Valid syntax\")\n\tend\n\t"}
+{"id":"fork/cmd/uddin-lang/main_test.go:192:12","src":"\n\tfun main():\n\t\ti = 0\n\t\twhile (i < 3):\n\t\t\tprint(i)\n\t\t\ti = i + 1\n\t\tend\n\tend\n\t"}
+{"id":"fork/interpreter/ast_test.go:45:3","src":"x = 42"}
+{"id":"fork/interpreter/ast_test.go:46:3","src":"print(\"hello\")"}
+{"id":"fork/interpreter/builtin_dispatch_integration_test.go:18:10","src":"\n\t\t// Test fungsi-fungsi yang didaftarkan di dispatcher\n\t\tresult1 = len(\"hello\")\n\t\tresult2 = typeof(42)\n\t\tresult3 = str(3.14)\n\t\tresult4 = upper(\"test\")\n\t\tresult5 = lower(\"TEST\")\n\t\tresult6 = abs(-10)\n\t\tresult7 = contains(\"hello world\", \"world\")\n\t"}
+{"id":"fork/interpreter/builtin_dispatch_integration_test.go:97:10","src":"\n\t\t// Test multiple calls untuk mengukur performa\n\t\tnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]\n\t\tfor (i in numbers):\n\t\t\tlen_result = len(\"test string\")\n\t\t\ttype_result = typeof(42)\n\t\t\tstr_result = str(3.14)\n\t\tend\n\t"}
+{"id":"fork/interpreter/builtin_dispatch_test.go:14:9","src":"len() requires 1 argument"}
+{"id":"fork/interpreter/elif_test.go:17:13","src":"\n\t\t\t\tx = 5\n\t\t\t\tif (x > 10) then:\n\t\t\t\t\tprint(\"greater than 10\")\n\t\t\t\telif (x > 0) then:\n\t\t\t\t\tprint(\"greater than 0\")\n\t\t\t\telse:\n\t\t\t\t\tprint(\"zero or negative\")\n\t\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/elif_test.go:31:13","src":"\n\t\t\t\tx = 15\n\t\t\t\tif (x < 10) then:\n\t\t\t\t\tprint(\"less than 10\")\n\t\t\t\telif (x < 20) then:\n\t\t\t\t\tprint(\"between 10 and 20\")\n\t\t\t\telif (x < 30) then:\n\t\t\t\t\tprint(\"between 20 and 30\")\n\t\t\t\telse:\n\t\t\t\t\tprint(\"30 or greater\")\n\t\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/elif_test.go:47:13","src":"\n\t\t\t\tx = 0\n\t\t\t\tif (x > 0) then:\n\t\t\t\t\tprint(\"positive\")\n\t\t\t\telif (x < 0) then:\n\t\t\t\t\tprint(\"negative\")\n\t\t\t\tend\n\t\t\t\tprint(\"done\")\n\t\t\t"}
+{"id":"fork/interpreter/elif_test.go:78:40","src":"\r\n"}
+{"id":"fork/interpreter/elif_test.go:89:11","src":"elif (x > 0) then: print(x) end"}
+{"id":"fork/interpreter/ensure_floats_test.go:59:31","src":"x = 0\ny = 0\nz = x / y"}
+{"id":"fork/interpreter/errors_test.go:155:3","src":"nonexistent_func()"}
+{"id":"fork/interpreter/evalplus_test.go:11:9","src":"\na = []\ni = 0\nwhile (i < 600):\n    a = a + [i]\n    i = i + 1\nend\nb = []\nj = 0\nwhile (j < 600):\n    b = b + [j * 2]\n    j = j + 1\nend\nc = a + b\nprint(len(c))\n"}
+{"id":"fork/interpreter/evalplus_test.go:47:9","src":"\na = [1, 2, 3]\nb = [4, 5, 6]\nc = a + b\nprint(len(c))\n"}
+{"id":"fork/interpreter/fn_wafio_test.go:165:12","src":"id=1"}
+{"id":"fork/interpreter/functions_test.go:14:13","src":"print(\"test\")"}
+{"id":"fork/interpreter/functions_test.go:15:18","src":"print(len(\"hello\"))"}
+{"id":"fork/interpreter/functions_test.go:16:17","src":"print(len([1, 2, 3]))"}
+{"id":"fork/interpreter/functions_test.go:17:15","src":"print(len({\"a\": 1, \"b\": 2}))"}
+{"id":"fork/interpreter/functions_test.go:18:18","src":"print(typeof(42))"}
+{"id":"fork/interpreter/functions_test.go:19:20","src":"print(typeof(3.14))"}
+{"id":"fork/interpreter/functions_test.go:20:21","src":"print(typeof(\"hello\"))"}
+{"id":"fork/interpreter/functions_test.go:21:19","src":"print(typeof(true))"}
+{"id":"fork/interpreter/functions_test.go:22:20","src":"print(typeof([1, 2, 3]))"}
+{"id":"fork/interpreter/functions_test.go:23:18","src":"print(typeof({\"a\": 1}))"}
+{"id":"fork/interpreter/functions_test.go:24:23","src":"fun test(): return 1 end\n\t\tprint(typeof(test))"}
+{"id":"fork/interpreter/functions_test.go:26:15","src":"print(str(42))"}
+{"id":"fork/interpreter/functions_test.go:27:17","src":"print(str(3.14))"}
+{"id":"fork/interpreter/functions_test.go:28:16","src":"print(str(true))"}
+{"id":"fork/interpreter/functions_test.go:29:18","src":"print(int(\"42\"))"}
+{"id":"fork/interpreter/functions_test.go:30:20","src":"arr = range(3)\n\t\tprint(join(arr, \", \"))"}
+{"id":"fork/interpreter/functions_test.go:32:13","src":"arr = split(\"a,b,c\", \",\")\n\t\tprint(join(arr, \" \"))"}
+{"id":"fork/interpreter/functions_test.go:34:12","src":"print(join([1, 2, 3], \", \"))"}
+{"id":"fork/interpreter/functions_test.go:35:14","src":"print(substr(\"hello\", 1, 3))"}
+{"id":"fork/interpreter/functions_test.go:36:23","src":"print(contains(\"hello\", \"ell\"))"}
+{"id":"fork/interpreter/functions_test.go:37:22","src":"print(contains([1, 2, 3], 2))"}
+{"id":"fork/interpreter/functions_test.go:39:22","src":"print(is_regex_match(\"^\\\\d+$\", \"12345\"))"}
+{"id":"fork/interpreter/functions_test.go:116:13","src":"\n\t\t\tfun add(a, b):\n\t\t\t\treturn a + b\n\t\t\tend\n\t\t\tadd(1)\n\t\t\t"}
+{"id":"fork/interpreter/functions_test.go:127:13","src":"\n\t\t\tfun add(a, b):\n\t\t\t\treturn a + b\n\t\t\tend\n\t\t\tadd(1, 2, 3)\n\t\t\t"}
+{"id":"fork/interpreter/functions_test.go:138:13","src":"\n\t\t\tundefined_function()\n\t\t\t"}
+{"id":"fork/interpreter/functions_test.go:191:13","src":"\n\t\t\tfun main():\n\t\t\t\tprint(\"Main function executed automatically\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/functions_test.go:200:13","src":"\n\t\t\tfun helper():\n\t\t\t\treturn \"helper called\"\n\t\t\tend\n\n\t\t\tfun main():\n\t\t\t\tprint(\"Main with helper: \" + helper())\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/functions_test.go:213:13","src":"\n\t\t\tfun greet(name):\n\t\t\t\treturn \"Hello, \" + name\n\t\t\tend\n\n\t\t\tfun main():\n\t\t\t\tprint(greet(\"Uddin-Lang\"))\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/import_test.go:12:16","src":"\n    // Test library file\n    fun add(a, b):\n        return a + b\n    end\n\n    fun multiply(a, b):\n        return a * b\n    end\n\n    test_var = \"Hello from library\"\n    "}
+{"id":"fork/interpreter/import_test.go:66:3","src":"test_var = Hello from library"}
+{"id":"fork/interpreter/interpreter_test.go:17:13","src":"\n\t\t\tx = 5\n\t\t\ty = 10\n\t\t\tz = x + y\n\t\t\tprint(z)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:27:13","src":"\n\t\t\tprint(5 + 3)\n\t\t\tprint(5 - 3)\n\t\t\tprint(5 * 3)\n\t\t\tprint(5 / 2)\n\t\t\tprint(5 % 2)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:34:14","src":"8\n2\n15\n2\n1"}
+{"id":"fork/interpreter/interpreter_test.go:38:13","src":"\n\t\t\tprint(5 == 5)\n\t\t\tprint(5 != 3)\n\t\t\tprint(5 > 3)\n\t\t\tprint(5 >= 5)\n\t\t\tprint(3 < 5)\n\t\t\tprint(5 <= 5)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:46:14","src":"true\ntrue\ntrue\ntrue\ntrue\ntrue"}
+{"id":"fork/interpreter/interpreter_test.go:50:13","src":"\n\t\t\tprint(true and true)\n\t\t\tprint(true and false)\n\t\t\tprint(true or false)\n\t\t\tprint(false or false)\n\t\t\tprint(not true)\n\t\t\tprint(not false)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:58:14","src":"true\nfalse\ntrue\nfalse\nfalse\ntrue"}
+{"id":"fork/interpreter/interpreter_test.go:62:13","src":"\n\t\t\tprint(\"Hello\" + \" \" + \"World\")\n\t\t\tprint(\"Hello\" * 3)\n\t\t\tprint(\"Hello\" == \"Hello\")\n\t\t\tprint(\"Hello\" != \"World\")\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:68:14","src":"Hello World\nHelloHelloHello\ntrue\ntrue"}
+{"id":"fork/interpreter/interpreter_test.go:113:13","src":"\n\t\t\tx = 10\n\t\t\tif (x > 5) then:\n\t\t\t\tprint(\"x is greater than 5\")\n\t\t\telse:\n\t\t\t\tprint(\"x is not greater than 5\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:125:13","src":"\n\t\t\tx = 3\n\t\t\tif (x > 5) then:\n\t\t\t\tprint(\"x is greater than 5\")\n\t\t\telse if (x > 0) then:\n\t\t\t\tprint(\"x is positive but not greater than 5\")\n\t\t\telse:\n\t\t\t\tprint(\"x is not positive\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:139:13","src":"\n\t\t\ti = 0\n\t\t\tsum = 0\n\t\t\twhile (i < 5):\n\t\t\t\tsum = sum + i\n\t\t\t\ti = i + 1\n\t\t\tend\n\t\t\tprint(sum)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:152:13","src":"\n\t\t\tsum = 0\n\t\t\tfor (i in range(5)):\n\t\t\t\tsum = sum + i\n\t\t\tend\n\t\t\tprint(sum)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:163:13","src":"\n\t\t\tresult = \"\"\n\t\t\tfor (i in range(3)):\n\t\t\t\tfor (j in range(3)):\n\t\t\t\t\tresult = result + str(i) + str(j) + \" \"\n\t\t\t\tend\n\t\t\tend\n\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:176:13","src":"\n\t\t\tresult = \"\"\n\t\t\tfor (i in range(1, 4)):\n\t\t\t\tresult = result + str(i) + \" \"\n\t\t\tend\n\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:187:13","src":"\n\t\t\t// Test range(0)\n\t\t\tprint(len(range(0)))\n\t\t\t// Test range(3, 3) - should be empty\n\t\t\tprint(len(range(3, 3)))\n\t\t\t// Test range(5, 2) - should be empty\n\t\t\tprint(len(range(5, 2)))\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:195:14","src":"0\n0\n0"}
+{"id":"fork/interpreter/interpreter_test.go:232:13","src":"\n\t\t\tarr = [1, 2, 3, 4, 5]\n\t\t\tprint(arr[0])\n\t\t\tprint(arr[4])\n\t\t\tprint(len(arr))\n\t\t\tarr[2] = 10\n\t\t\tprint(arr[2])\n\t\t\tprint(join(arr, \", \"))\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:245:13","src":"\n\t\t\tobj = {\"name\": \"John\", \"age\": 30}\n\t\t\tprint(obj[\"name\"])\n\t\t\tprint(obj[\"age\"])\n\t\t\tprint(len(obj))\n\t\t\tobj[\"city\"] = \"New York\"\n\t\t\tprint(obj[\"city\"])\n\t\t\tprint(typeof(obj))\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:254:14","src":"John\n30\n2\nNew York\nobject"}
+{"id":"fork/interpreter/interpreter_test.go:258:13","src":"\n\t\t\tarr = [1, 2, 3]\n\t\t\tarr = arr + [4]\n\t\t\tprint(join(arr, \", \"))\n\t\t\tprint(len(arr))\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:268:13","src":"\n\t\t\t// Test different object key syntaxes\n\t\t\tobj1 = {\"name\": \"John\", \"age\": 30}\n\t\t\tobj2 = {'name': \"Alice\", 'age': 25}\n\t\t\tobj3 = {name: \"Bob\", age: 35}\n\t\t\tobj4 = {\"name\": \"Carol\", 'age': 28, city: \"Miami\"}\n\n\t\t\tprint(obj1[\"name\"])\n\t\t\tprint(obj2[\"name\"])\n\t\t\tprint(obj3[\"name\"])\n\t\t\tprint(obj4[\"name\"])\n\t\t\tprint(obj4[\"city\"])\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:281:14","src":"John\nAlice\nBob\nCarol\nMiami"}
+{"id":"fork/interpreter/interpreter_test.go:285:13","src":"\n\t\t\t// Test negative indexing for arrays\n\t\t\tarr = [1, 2, 3, 4, 5]\n\t\t\tprint(arr[-1])  // Last element\n\t\t\tprint(arr[-2])  // Second to last\n\t\t\tprint(arr[-5])  // First element\n\n\t\t\t// Test negative indexing for strings\n\t\t\ttext = \"Hello\"\n\t\t\tprint(text[-1])  // Last char\n\t\t\tprint(text[-2])  // Second to last char\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:297:14","src":"5\n4\n1\no\nl"}
+{"id":"fork/interpreter/interpreter_test.go:343:13","src":"\n\t\t\ttry:\n\t\t\t\tx = 5 / 0\n\t\t\t\tprint(\"This should not be printed\")\n\t\t\tcatch (err):\n\t\t\t\tprint(\"Caught error: division by zero\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:356:13","src":"\n\t\t\ttry:\n\t\t\t\tarr = [1, 2, 3]\n\t\t\t\tprint(arr[5])\n\t\t\tcatch (err):\n\t\t\t\tprint(\"Caught error: index out of range\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:369:13","src":"\n\t\t\ttry:\n\t\t\t\tprint(undefined_var)\n\t\t\tcatch (err):\n\t\t\t\tprint(\"Caught error: undefined variable\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:381:13","src":"\n\t\t\ttry:\n\t\t\t\tprint(\"hello\" - 5)\n\t\t\tcatch (err):\n\t\t\t\tprint(\"Caught error: invalid operation\")\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:393:13","src":"\n\t\t\tx = 5 / 0\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:401:13","src":"\n\t\t\ttry:\n\t\t\t\ttry:\n\t\t\t\t\tx = 5 / 0\n\t\t\t\tcatch (err1):\n\t\t\t\t\tprint(\"Inner catch: \" + str(err1))\n\t\t\t\tend\n\t\t\tcatch (err2):\n\t\t\t\tprint(\"Outer catch: \" + str(err2))\n\t\t\tend\n\t\t\t"}
+{"id":"fork/interpreter/interpreter_test.go:452:13","src":"\n\tfun test():\n\t\treturn 42\n\tend\n\n\tresult = test()\n\tprint(result)\n\t"}
+{"id":"fork/interpreter/loop_control_test.go:17:13","src":"\n\t\t\t\tresult = []\n\t\t\t\ti = 0\n\t\t\t\twhile (i < 10):\n\t\t\t\t\ti = i + 1\n\t\t\t\t\tif (i == 5) then:\n\t\t\t\t\t\tbreak\n\t\t\t\t\tend\n\t\t\t\t\tresult = result + [i]\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:33:13","src":"\n\t\t\t\tresult = []\n\t\t\t\ti = 0\n\t\t\t\twhile (i < 6):\n\t\t\t\t\ti = i + 1\n\t\t\t\t\tif (i % 2 == 0) then:\n\t\t\t\t\t\tcontinue\n\t\t\t\t\tend\n\t\t\t\t\tresult = result + [i]\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:49:13","src":"\n\t\t\t\tresult = []\n\t\t\t\tnumbers = [1, 2, 3, 4, 5, 6, 7, 8]\n\t\t\t\tfor (num in numbers):\n\t\t\t\t\tif (num == 5) then:\n\t\t\t\t\t\tbreak\n\t\t\t\t\tend\n\t\t\t\t\tresult = result + [num]\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:64:13","src":"\n\t\t\t\tresult = []\n\t\t\t\tnumbers = [1, 2, 3, 4, 5, 6]\n\t\t\t\tfor (num in numbers):\n\t\t\t\t\tif (num % 2 == 0) then:\n\t\t\t\t\t\tcontinue\n\t\t\t\t\tend\n\t\t\t\t\tresult = result + [num]\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:79:13","src":"\n\t\t\t\tresult = []\n\t\t\t\ti = 1\n\t\t\t\twhile (i <= 3):\n\t\t\t\t\tj = 1\n\t\t\t\t\twhile (j <= 5):\n\t\t\t\t\t\tif (j == 3) then:\n\t\t\t\t\t\t\tbreak\n\t\t\t\t\t\tend\n\t\t\t\t\t\tresult = result + [i * 10 + j]\n\t\t\t\t\t\tj = j + 1\n\t\t\t\t\tend\n\t\t\t\t\ti = i + 1\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:99:13","src":"\n\t\t\t\tresult = []\n\t\t\t\ti = 0\n\t\t\t\twhile (i < 10):\n\t\t\t\t\ti = i + 1\n\t\t\t\t\tif (i % 2 == 0) then:\n\t\t\t\t\t\tcontinue\n\t\t\t\t\tend\n\t\t\t\t\tif (i > 7) then:\n\t\t\t\t\t\tbreak\n\t\t\t\t\tend\n\t\t\t\t\tresult = result + [i]\n\t\t\t\tend\n\t\t\t\tprint(result)\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:156:13","src":"\n\t\t\t\tbreak\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:163:13","src":"\n\t\t\t\tcontinue\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:170:13","src":"\n\t\t\t\tfun test():\n\t\t\t\t\tbreak\n\t\t\t\tend\n\t\t\t\ttest()\n\t\t\t"}
+{"id":"fork/interpreter/loop_control_test.go:180:13","src":"\n\t\t\t\tfun test():\n\t\t\t\t\tcontinue\n\t\t\t\tend\n\t\t\t\ttest()\n\t\t\t"}
+{"id":"fork/interpreter/memory_layout_integration_test.go:33:14","src":"\n\t\t\tx = 42\n\t\t\ty = [1, 2, 3]\n\t\t\tz = {\"key\": \"value\"}\n\t\t\tprint(x + len(y) + len(z))\n\t\t"}
+{"id":"fork/interpreter/memory_layout_integration_test.go:151:13","src":"\n\t\t// Create arrays and maps\n\t\tarr = []\n\t\tfor (i in range(1000)):\n\t\t\tappend(arr, i)\n\t\tend\n\t\t\n\t\tmap_data = {}\n\t\tfor (i in range(500)):\n\t\t\tkey = \"key_\" + str(i)\n\t\t\tmap_data[key] = i * 2\n\t\tend\n\t\t\n\t\t// Access data\n\t\tsum = 0\n\t\tfor (val in arr):\n\t\t\tsum = sum + val\n\t\tend\n\t\t\n\t\tfor (i in range(500)):\n\t\t\tkey = \"key_\" + str(i)\n\t\t\tif (key in map_data) then:\n\t\t\t\tsum = sum + map_data[key]\n\t\t\tend\n\t\tend\n\t\t\n\t\tprint(\"Sum: \" + str(sum))\n\t"}
+{"id":"fork/interpreter/memory_layout_integration_test.go:210:13","src":"\n\t\tarr = []\n\t\tfor (i in range(100)):\n\t\t\tappend(arr, i)\n\t\tend\n\t\tsum = 0\n\t\tfor (val in arr):\n\t\t\tsum = sum + val\n\t\tend\n\t"}
+{"id":"fork/interpreter/parser_test.go:42:4","src":"f()"}
+{"id":"fork/interpreter/parser_test.go:43:4","src":"f(a, b)"}
+{"id":"fork/interpreter/parser_test.go:44:4","src":"f(a, b + c)"}
+{"id":"fork/interpreter/parser_test.go:47:4","src":"fun(x): return x * x end"}
+{"id":"fork/interpreter/parser_test.go:78:4","src":"x = 5"}
+{"id":"fork/interpreter/parser_test.go:79:4","src":"x = 5\ny = 10"}
+{"id":"fork/interpreter/parser_test.go:80:4","src":"if (x > 5) then: y = 10 end"}
+{"id":"fork/interpreter/parser_test.go:81:4","src":"while (x > 0): x = x - 1 end"}
+{"id":"fork/interpreter/parser_test.go:82:4","src":"for (i in range(10)): print(i) end"}
+{"id":"fork/interpreter/parser_test.go:83:4","src":"fun add(a, b): return a + b end"}
+{"id":"fork/interpreter/parser_test.go:84:4","src":"try: x = 1/0 catch (err): print(err) end"}
+{"id":"fork/interpreter/parser_test.go:85:4","src":"\n\t\tx = 5\n\t\ty = 10\n\t\tz = x + y\n\t\tprint(z)\n\t\t"}
+{"id":"fork/interpreter/parser_test.go:114:4","src":"if (x > 5) then: y = 10 else: y = 5 end"}
+{"id":"fork/interpreter/parser_test.go:115:4","src":"if (x > 5) then: y = 10 z = 20 end"}
+{"id":"fork/interpreter/parser_test.go:116:4","src":"if (x > 5) then: y = 10 else if (x > 0) then: y = 5 else: y = 0 end"}
+{"id":"fork/interpreter/parser_test.go:297:4","src":"fun add(a, b): return a+b end"}
+{"id":"fork/interpreter/parser_test.go:306:4","src":"try: x = 1 catch (err): print(err) end"}
+{"id":"fork/interpreter/performance_test.go:11:12","src":"\n\t\tx = 5 + 3 * 2\n\t\ty = \"hello world\"\n\t\tz = [1, 2, 3, 4, 5]\n\t\tif (x > 10) then:\n\t\t\tprint(\"large number\")\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:38:12","src":"\n\t\ttext = \"hello\"\n\t\tresult = \"\"\n\t\tfor (i in range(1, 100)):\n\t\t\tresult = result + text + \" world \" + str(i)\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:94:12","src":"\n\t\tmap1 = {}\n\t\tfor (i in range(1, 100)):\n\t\t\tkey = \"key\" + str(i)\n\t\t\tmap1 = map1 + {key: i}\n\t\tend\n\n\t\tmap2 = {}\n\t\tfor (i in range(100, 200)):\n\t\t\tkey = \"key\" + str(i)\n\t\t\tmap2 = map2 + {key: i * 2}\n\t\tend\n\n\t\t// Test large map merging\n\t\tcombined = map1 + map2\n\t"}
+{"id":"fork/interpreter/performance_test.go:127:12","src":"\n\t\t// Optimized version using direct assignment and push\n\t\tdata = []\n\t\tfor (i in range(1, 50)):\n\t\t\trow = {}\n\t\t\tfor (j in range(1, 10)):\n\t\t\t\tkey = \"col\" + str(j)\n\t\t\t\trow[key] = i * j\n\t\t\tend\n\t\t\tpush(data, row)\n\t\tend\n\n\t\t// Process the data with optimized approach\n\t\tprocessed = []\n\t\tfor (row in data):\n\t\t\tnew_row = {}\n\t\t\tfor (j in range(1, 5)):\n\t\t\t\tkey = \"col\" + str(j)\n\t\t\t\tif (key in row) then:\n\t\t\t\t\tnew_key = \"new_\" + key\n\t\t\t\t\tnew_row[new_key] = row[key] * 2\n\t\t\t\tend\n\t\t\tend\n\t\t\tpush(processed, new_row)\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:170:12","src":"\n\t\tx = 5\n\t\ty = 10\n\t\tresult = x + y\n\t\tresult = result * 2\n\t\tresult = result - 3\n\t\tresult = result / 2\n\t\ttext = \"hello\" + \" world\"\n\t\tarr = [1, 2, 3] + [4, 5, 6]\n\t\tmap_data = {\"a\": 1} + {\"b\": 2}\n\t"}
+{"id":"fork/interpreter/performance_test.go:354:12","src":"\n\t\tresult = ((5 + 3) * 2 - 1) / (4 + 2) + (10 % 3)\n\t\tarray = [result, result * 2, result * 3]\n\t\tmap_data = {\"first\": array[0], \"second\": array[1], \"third\": array[2]}\n\t\tfinal = map_data[\"second\"] + array[2]\n\t"}
+{"id":"fork/interpreter/performance_test.go:419:12","src":"\n\t\tsum = 0\n\t\tfor (i in range(1, 100)):\n\t\t\tsum = sum + i\n\t\tend\n\n\t\t// Optimized array building using push\n\t\tarr = []\n\t\tfor (i in range(1, 20)):\n\t\t\tpush(arr, i * 2)\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:448:12","src":"\n\t\tx = 50\n\t\tresult = (x > 30) ? x * 2 : x / 2\n\n\t\tfor (i in range(1, 50)):\n\t\t\tif (i % 2 == 0) then:\n\t\t\t\teven_result = i * 3\n\t\t\telse:\n\t\t\t\todd_result = i + 1\n\t\t\tend\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:477:12","src":"\n\t\tarr = [5, 2, 8, 1, 9, 3]\n\t\tsorted_arr = sort(arr)\n\t\tmax_val = max(arr)\n\t\tmin_val = min(arr)\n\t\tsum_val = sum(arr)\n\t\tlength = len(arr)\n\t\treversed = reverse(arr)\n\t"}
+{"id":"fork/interpreter/performance_test.go:503:12","src":"\n\t\tarr = []\n\t\tfor (i in range(1, 100)):\n\t\t\tarr = arr + [i]\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:525:12","src":"\n\t\tx = 42\n\t\ty = 3.14\n\t\tz = \"hello\"\n\t\tfor (i in range(1, 100)):\n\t\t\ta = x + 1\n\t\t\tb = y * 2.0\n\t\t\tc = z + \"world\"\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:551:12","src":"\n\t\tdata = {\"a\": 1, \"b\": 2, \"c\": 3, \"d\": 4, \"e\": 5}\n\t\tfor (i in range(1, 100)):\n\t\t\tx = data[\"a\"] + data[\"b\"] + data[\"c\"]\n\t\tend\n\t"}
+{"id":"fork/interpreter/performance_test.go:574:12","src":"\n\t\t// Optimized version using push instead of concatenation\n\t\tbig_array = []\n\t\tfor (i in range(1, 500)):\n\t\t\tpush(big_array, i)\n\t\tend\n\n\t\tfiltered = []\n\t\tfor (item in big_array):\n\t\t\tif (item % 2 == 0) then:\n\t\t\t\tpush(filtered, item * 2)\n\t\t\tend\n\t\tend\n\n\t\tsum = 0\n\t\tfor (item in filtered):\n\t\t\tsum = sum + item\n\t\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:11:12","src":"print(\"Hello\")"}
+{"id":"fork/interpreter/program_test.go:80:12","src":"line 1\nline 2 with error\nline 3"}
+{"id":"fork/interpreter/program_test.go:109:36","src":"print(\"Hello World\")"}
+{"id":"fork/interpreter/program_test.go:187:12","src":"  // comment\n  42"}
+{"id":"fork/interpreter/program_test.go:228:4","src":"break"}
+{"id":"fork/interpreter/program_test.go:229:4","src":"continue"}
+{"id":"fork/interpreter/program_test.go:325:12","src":"\n\tfun main():\n\t\tresult = 5\n\t\tprint(\"Result: \" + str(result))\n\n\t\t// Test list operations\n\t\tnums = [1, 2, 3]\n\t\tprint(\"Length: \" + str(len(nums)))\n\n\t\t// Test conditionals\n\t\tif (result > 3) then:\n\t\t\tprint(\"Result is greater than 3\")\n\t\telse:\n\t\t\tprint(\"Result is not greater than 3\")\n\t\tend\n\n\t\t// Test while loop\n\t\ti = 0\n\t\twhile (i < 2):\n\t\t\tprint(\"Loop iteration: \" + str(i))\n\t\t\ti = i + 1\n\t\tend\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:388:24","src":"\n\tfun main():\n\t\tx = undefinedVariable\n\t\tprint(x)\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:410:31","src":"   \n\t  "}
+{"id":"fork/interpreter/program_test.go:418:12","src":"\n\tfun main():\n\t\t// String functions\n\t\ttext = \"Hello\"\n\t\tprint(\"Length: \" + str(len(text)))\n\n\t\t// Test list\n\t\tnums = [1, 2, 3]\n\t\ttotal = 0\n\t\tfor (n in nums):\n\t\t\ttotal = total + n\n\t\tend\n\t\tprint(\"Sum: \" + str(total))\n\n\t\t// String formatting\n\t\tgreeting = \"Hello World!\"\n\t\tprint(greeting)\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:459:13","src":"\n\tfun main():\n\t\ta = 10\n\t\tb = 5\n\t\tprint(\"Add: \" + str(a + b))\n\t\tprint(\"Sub: \" + str(a - b))\n\t\tprint(\"Mul: \" + str(a * b))\n\t\tprint(\"Div: \" + str(a / b))\n\t\tprint(\"Mod: \" + str(a % 3))\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:476:13","src":"\n\tfun main():\n\t\tx = true\n\t\ty = false\n\t\tprint(\"x and y: \" + str(x and y))\n\t\tprint(\"x or y: \" + str(x or y))\n\t\tprint(\"not x: \" + str(not x))\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:491:13","src":"\n\tfun main():\n\t\ts1 = \"Hello\"\n\t\ts2 = \"World\"\n\t\tprint(s1 + \" \" + s2)\n\t\tprint(\"Equal: \" + str(s1 == s2))\n\t\tprint(\"Not equal: \" + str(s1 != s2))\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:506:13","src":"\n\tfun greet(name):\n\t\treturn \"Hello \" + name\n\tend\n\n\tfun main():\n\t\tmessage = greet(\"World\")\n\t\tprint(message)\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:522:13","src":"\n\tfun main():\n\t\tresult = str(len(\"test\"))\n\t\tprint(\"Length as string: \" + result)\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:536:12","src":"\n\tfun main():\n\t\t// Test range function\n\t\tnumbers = range(3)\n\t\tfor (n in numbers):\n\t\t\tprint(\"Number: \" + str(n))\n\t\tend\n\n\t\t// Test simple operations\n\t\tx = 5\n\t\ty = 3\n\t\tprint(\"Sum: \" + str(x + y))\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:567:12","src":"\n\tfun main():\n\t\t// Test break\n\t\ti = 0\n\t\twhile (true):\n\t\t\tif (i >= 2) then:\n\t\t\t\tbreak\n\t\t\tend\n\t\t\tprint(\"Break test: \" + str(i))\n\t\t\ti = i + 1\n\t\tend\n\n\t\t// Test continue\n\t\tj = 0\n\t\twhile (j < 3):\n\t\t\tj = j + 1\n\t\t\tif (j == 2) then:\n\t\t\t\tcontinue\n\t\t\tend\n\t\t\tprint(\"Continue test: \" + str(j))\n\t\tend\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:825:12","src":"\n\tfun helper(x):\n\t\treturn x * 2\n\tend\n\n\tfun main():\n\t\t// Variables and assignments\n\t\ta = 10\n\t\tb = \"hello\"\n\t\tc = [1, 2, 3]\n\t\td = {\"key\": \"value\"}\n\n\t\t// Function calls\n\t\tresult = helper(5)\n\t\tprint(\"Helper result: \" + str(result))\n\n\t\t// Conditional with else\n\t\tif (a > 5) then:\n\t\t\tprint(\"a is greater than 5\")\n\t\telse:\n\t\t\tprint(\"a is not greater than 5\")\n\t\tend\n\n\t\t// Loop with for\n\t\tfor (item in c):\n\t\t\tprint(\"Item: \" + str(item))\n\t\tend\n\n\t\t// Complex expressions\n\t\texpr = (a + 5) * 2 - 1\n\t\tprint(\"Expression: \" + str(expr))\n\n\t\t// Boolean logic\n\t\tflag = true and false\n\t\tprint(\"Flag: \" + str(flag))\n\n\t\t// String operations\n\t\tgreeting = b + \" world\"\n\t\tprint(\"Greeting: \" + greeting)\n\n\t\t// Return value\n\t\treturn 42\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:911:18","src":"\n\tfun main():\n\t\tx = 5\n\t\ty = 10\n\t\tz = x < y\n\t\tprint(str(z))\n\tend\n\t"}
+{"id":"fork/interpreter/program_test.go:926:25","src":"fun test(): return 1 end"}
+{"id":"fork/interpreter/program_test.go:963:12","src":"x = 42\ny = 100"}
+{"id":"fork/interpreter/program_test.go:998:3","src":"i = 0\nwhile (i < 3) {\n    print(i)\n    i = i + 1\n}"}
+{"id":"fork/interpreter/program_test.go:1008:3","src":"fun test(a, b) {\n    return a + b\n}\nresult = test(1, 2)"}
+{"id":"fork/interpreter/program_test.go:1019:3","src":"try {\n    x = 1\n} catch (e) {\n    print(\"error\")\n}"}
+{"id":"fork/interpreter/program_test.go:1025:3","src":"m = {\"key\": \"value\"}\nprint(m[\"key\"])"}
+{"id":"fork/interpreter/program_test.go:1028:3","src":"arr = [1, 2, 3]\nprint(arr[0])"}
+{"id":"fork/interpreter/program_test.go:1031:3","src":"result = (1 + 2) * (3 - 1)"}
+{"id":"fork/interpreter/program_test.go:1033:3","src":"f = fun(x) { return x * 2 }\nprint(f(5))"}
+{"id":"fork/interpreter/program_test.go:1036:3","src":"outer x = 42\nx = x + 1"}
+{"id":"fork/interpreter/program_test.go:1046:3","src":"fun early() {\n    return \"done\"\n    print(\"unreachable\")\n}"}
+{"id":"fork/interpreter/program_test.go:1053:3","src":"x = -5\ny = not false\nz = 5 > 3 and 2 < 4"}
+{"id":"fork/interpreter/sandbox_depth_test.go:46:8","src":"x = ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((1))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))\ny = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\ntry:\nx = 1\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\ncatch (e):\n    x = 2\nend\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:60:12","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:61:13","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:63:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = (a < b)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:64:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = (a == b)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:65:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = (a in [b])\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:66:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = sort([a, b])\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:67:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = mode([a])\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:68:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = str(a)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:69:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = contains([a], b)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:70:22","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nr = max([a, b])\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:71:22","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\nr = (x == y)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:72:22","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\nr = (x < y)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:73:22","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\nr = mode([x])\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:74:22","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\nr = index_of([x], y)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:75:22","src":"x = [1]\ny = [1]\ni = 0\nwhile (i < 40):\n    x = [x, x]\n    y = [y, y]\n    i = i + 1\nend\nr = json_stringify(x)\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:90:34","src":"l = [[2, \"b\"], [1, \"a\"]]\nsort(l)\nprint(str(l) + str(l == l) + str(mode([1, 1, 2])))\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:112:19","src":"println(\"ALLOW\")"}
+{"id":"fork/interpreter/sandbox_depth_test.go:112:58","src":"ALLOW\n"}
+{"id":"fork/interpreter/sandbox_depth_test.go:115:19","src":"waf_block()"}
+{"id":"fork/interpreter/sandbox_depth_test.go:178:35","src":"i = 0\nwhile (i < 3) {\n    if (true) then {\n        i = i + 1\n    }\n}\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:17:9","src":"k = \"a\" * 1000000\nm = {}\nl = []\ni = 0\nwhile (i < 200):\n    try:\n        x = m[k]\n    catch (e):\n        push(l, e)\n    end\n    i = i + 1\nend\nprint(len(l), len(l[0]))\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:33:8","src":"p = \"(\" + (\"a\" * 3000)\nl = []\ni = 0\nwhile (i < 200):\n    push(l, regex_match(\"x\", p))\n    i = i + 1\nend\nprint(len(str(l[0])))\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:47:9","src":"s = char(1) * 200000\nx = json_stringify([s])\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:53:50","src":"print(json_stringify([\"a<b\", char(1)]))\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:97:21","src":"s = \"a\" * 1000000\nl = []\ni = 0\nwhile (i < 20000):\n    push(l, s + str(i))\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:98:22","src":"s = \"a\" * 1000000\nl = split(s, \"\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:99:18","src":"s = \"a,\" * 32768\nl = []\ni = 0\nwhile (i < 20000):\n    push(l, split(s, \",\"))\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:100:18","src":"l = []\ni = 0\nwhile (i < 20000):\n    push(l, range(100000))\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:101:24","src":"l = []\ni = 0\nwhile (i < 20000):\n    push(l, [i] * 100000)\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:102:22","src":"m = {}\ni = 0\nwhile (i < 20000):\n    n = {}\n    n[str(i)] = i\n    m = m + n\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:103:20","src":"s = \"a\" * 100000\nst = set_new()\ni = 0\nwhile (i < 20000):\n    set_add(st, s + str(i))\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:104:20","src":"l = []\ni = 0\nwhile (i < 20000):\n    unshift(l, i)\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:105:25","src":"m = {}\nfor (i in range(10000)):\n    m[str(i)] = i\nend\nwhile (true):\n    for (k in m):\n        break\n    end\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:106:18","src":"s = \"[\" + (\"1,\" * 500000) + \"1]\"\nl = json_parse(s)\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:107:22","src":"s = \"a\" * 1000000\nl = regex_find_all(s, \"a\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:108:19","src":"s = \"a\" * 1000000\nl = regex_split(s, \"a\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:109:29","src":"p = \"(a|b)\" * 100000\nx = is_regex_match(p, \"ab\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:110:28","src":"p = \"(?:a{100}){10}\" * 5\nx = regex_match(\"ab\", p)\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:111:26","src":"s = \"a\" * 1000000\ntry:\n    l = split(s, \"\")\ncatch (e):\n    x = 1\nend\nprint(\"after\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:131:9","src":"\ncookie = \"a=1; session=abc; \" * 200\nn = 0\nfor (p in split(cookie, \";\")):\n    kv = split(trim(p), \"=\")\n    if (len(kv) == 2 and lower(kv[0]) == \"session\") then:\n        n = n + 1\n    end\nend\nbody = json_parse(\"{\\\"user\\\":\\\"x\\\",\\\"items\\\":[\" + join(map(range(200), str), \",\") + \"]}\")\nl = []\nfor (i in range(2000)):\n    append(l, i)\nend\nm = {}\nfor (i in range(500)):\n    m[str(i)] = i\nend\nsort(l)\nhit = is_regex_match(\"(?i)(union\\\\s+select|sleep\\\\(|benchmark\\\\()\", \"id=1 UNION SELECT 1\")\nparts = regex_split(\"a1b22c333\", \"[0-9]+\")\nclean = regex_replace(\"<script>x</script>\", \"(?i)</?script>\", \"\")\nprint(n, len(body[\"items\"]), len(l), len(m), l[0], hit, len(parts), clean)\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:169:35","src":"s = \"a\" * 100000\nl = split(s, \"\")\nx = is_regex_match(\"(a|b)\" * 2000, \"ab\")\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:181:28","src":"l = []\ni = 0\nwhile (i < 20000):\n    append(l, i)\n    push(l, i)\n    i = i + 1\nend\nprint(len(l))\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:207:59","src":"s = \"a\" * 1000000\nfor (c in s):\n    break\nend\n"}
+{"id":"fork/interpreter/sandbox_memory_test.go:215:61","src":"for (c in \"héx\"):\n    print(c)\nend\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:26:29","src":"a\nab\na"}
+{"id":"fork/interpreter/sandbox_regex_test.go:27:26","src":"b\na"}
+{"id":"fork/interpreter/sandbox_regex_test.go:27:87","src":"\nx\nx"}
+{"id":"fork/interpreter/sandbox_regex_test.go:73:11","src":"s = \"word1 word2 \" * 342\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:75:27","src":"s = \"word1 word2 \" * 342\nx = is_regex_match(\"(?i)(?:\\\\w+\\\\s*){50}x\", s)\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:76:27","src":"s = \"word1 word2 \" * 342\ni = 0\nwhile (i < 10):\n    x = regex_match(s, \"(?i)(?:\\\\w+\\\\s*){50}x\")\n    i = i + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:77:27","src":"s = \"word1 word2 \" * 342\nt = s * 16\nx = is_regex_match(\"(?i)(?:\\\\w+\\\\s*){50}x\", t)\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:78:27","src":"s = \"a\" * 16384\nx = regex_find_all(s, \"(?:a*b)|a\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:79:27","src":"s = \"a\" * 16384\nx = regex_replace(s, \"(?:a*b)|a\", \"x\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:80:27","src":"s = \"a\" * 16384\nx = regex_split(s, \"(?:a*b)|a\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:81:27","src":"s = \"a\" * 1000000\nx = regex_find(s, \"b\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:97:9","src":"s = \"id=12&q=union select 1&x=34 \" * 128\na = len(regex_find_all(s, \"\\\\d+\"))\nb = is_regex_match(\"(?i)union\\\\s+select\", s)\nc = len(regex_split(s, \"&\"))\nd = len(regex_replace(s, \"(?i)select\", \"S\"))\nprint(a, b, c)\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:115:3","src":"print(is_regex_match(\"\\\\Qa\", \"xa\"), regex_match(\"a)b\", \"\\\\Qa)b\"), len(regex_find_all(\"a a a\", \"\\\\Qa\")), regex_split(\"1a)b2\", \"\\\\Qa)b\"))\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:134:35","src":"x = is_regex_match(\"a\", \"\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:137:35","src":"x = regex_find_all(\"\", \"abcdefgh\")\n"}
+{"id":"fork/interpreter/sandbox_regex_test.go:148:35","src":"x = regex_match(\"a\", \"a\")\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:24:28","src":"print(len)\nprint(PI)\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:33:65","src":"host value\n7\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:39:28","src":"print(marker)\nmarker = \"changed\"\nupper = marker\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:62:31","src":"print(upper(\"ok\"))"}
+{"id":"fork/interpreter/sandbox_startup_test.go:67:68","src":"OK\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:76:34","src":"\nalias = upper\nmessage = \"hello\"\nfun render():\n    print(alias(message))\n    print(len(message))\nend\nupper = \"shadowed\"\nrender()\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:86:26","src":"HELLO\n5\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:93:34","src":"\nprint println typeof int float str char rune\nappend len range slice sort reverse push pop shift unshift\nindex_of last_index_of map filter reduce\nset_new set_add set_remove set_has set_size set_to_array\nstack_new stack_push stack_pop stack_peek stack_size stack_empty\nqueue_new queue_enqueue queue_dequeue queue_front queue_size queue_empty\njoin split lower upper contains substr find replace trim\nstarts_with ends_with reverse_str path_join path_dirname path_basename path_ext\nabs max min pow sqrt cbrt round floor ceil trunc sin cos tan asin acos atan atan2\nsinh cosh tanh log log10 log2 logb exp exp2 sum mean median mode std_dev variance\ngcd lcm sign clamp lerp degrees radians is_nan is_infinite\nis_regex_match regex_match regex_find regex_find_all regex_replace regex_split\njson_parse json_stringify date_now time_now date_format date_format_new date_parse\ndate_add date_subtract date_diff date_between date_compare\nwaf_header waf_query waf_body_contains waf_cidr_match waf_path_match waf_score\nwaf_action waf_detected waf_detected_any waf_detected_list\nwaf_return waf_block waf_allow waf_log"}
+{"id":"fork/interpreter/sandbox_startup_test.go:133:28","src":"value = 1\n"}
+{"id":"fork/interpreter/sandbox_startup_test.go:162:28","src":"\nfun main():\n    agent = waf_header(\"user-agent\")\n    if (contains(lower(agent), \"sqlmap\")) then:\n        waf_log()\n    end\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:61:18","src":"x = 0\nwhile (true):\n    x = x + 1\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:62:18","src":"while (true):\n    try:\n        while (true):\n            x = 1\n        end\n    catch (e):\n        x = 2\n    end\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:63:18","src":"fun f(n):\n    return f(n + 1)\nend\nf(0)\n"}
+{"id":"fork/interpreter/sandbox_test.go:77:35","src":"for (i in range(100000)):\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:102:35","src":"fun f(n):\n    if (n == 0) then:\n        return 0\n    end\n    return f(n - 1)\nend\nf(40)\n"}
+{"id":"fork/interpreter/sandbox_test.go:111:22","src":"s = \"a\"\nwhile (true):\n    s = s + s\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:112:22","src":"s = \"a\"\nwhile (true):\n    s += s\nend\n"}
+{"id":"fork/interpreter/sandbox_test.go:113:22","src":"s = \"ab\"\ns *= 100000000\n"}
+{"id":"fork/interpreter/sandbox_test.go:114:22","src":"s = \"a\" * 1000000\nl = [s] * 1000\nx = str(l)\n"}
+{"id":"fork/interpreter/sandbox_test.go:115:22","src":"s = \"a\" * 1000000\nl = [s] * 1000\nprint(l)\n"}
+{"id":"fork/interpreter/sandbox_test.go:116:22","src":"s = \"a\" * 1000000\nl = [s] * 1000\nx = json_stringify(l)\n"}
+{"id":"fork/interpreter/sandbox_test.go:117:22","src":"s = \"a\" * 1000000000000\n"}
+{"id":"fork/interpreter/sandbox_test.go:118:22","src":"s = \"ab\" * 4611686018427387904\n"}
+{"id":"fork/interpreter/sandbox_test.go:119:22","src":"l = [1] * 100000000\n"}
+{"id":"fork/interpreter/sandbox_test.go:120:22","src":"l = range(100000000)\n"}
+{"id":"fork/interpreter/sandbox_test.go:121:22","src":"l = range(-4611686018427387904, 4611686018427387904)\n"}
+{"id":"fork/interpreter/sandbox_test.go:124:22","src":"s = \"a\" * 1000000\nl = [s] * 1000\nx = join(l, \"\")\n"}
+{"id":"fork/interpreter/sandbox_test.go:125:22","src":"s = \"a\" * 1000000\nx = replace(s, \"a\", \"bbbbbbbb\")\n"}
+{"id":"fork/interpreter/sandbox_test.go:126:22","src":"s = \"a\" * 100000\nx = regex_replace(s, \"a\", \"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\")\n"}
+{"id":"fork/interpreter/sandbox_test.go:135:35","src":"s = \"ab\" * 1000\nl = range(1000)\nx = replace(s, \"a\", \"cc\")\n"}
+{"id":"fork/interpreter/sandbox_test.go:157:3","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nc = [0]\nc[0] = c\nx = (b == c)\n"}
+{"id":"fork/interpreter/sandbox_test.go:158:3","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nx = (a < b)\n"}
+{"id":"fork/interpreter/sandbox_test.go:159:3","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nc = [0]\nc[0] = c\nx = contains([b], c)\n"}
+{"id":"fork/interpreter/sandbox_test.go:165:21","src":"a = [0, 1]\na[0] = a\nb = [0]\nb[0] = b\nprint(a)\n"}
+{"id":"fork/interpreter/sandbox_test.go:175:9","src":"fun spin(x):\n    while (true):\n        x = x + 1\n    end\nend\nl = map(range(200), spin)\n"}
+{"id":"fork/interpreter/sandbox_test.go:206:27","src":"fun f(a):\n    print(a)\nend\nf(1)\nwaf_block()\n"}
+{"id":"fork/interpreter/sandbox_test.go:229:28","src":"l = []\nfor (i in range(20)):\n    l = l + [str(i)]\nend\nprint(upper(join(l, \",\")))\n"}
+{"id":"fork/interpreter/tokenizer_test.go:19:14","src":"if (x > 10) then: print(x) end"}
+{"id":"fork/interpreter/tokenizer_test.go:24:14","src":"// This is a comment\nx = 5"}
+{"id":"fork/interpreter/tokenizer_test.go:39:14","src":"arr[0] = 42"}
+{"id":"fork/interpreter/tokenizer_test.go:54:14","src":"power = a ** b"}
+{"id":"fork/interpreter/tokenizer_test.go:59:14","src":"result = 2 ** 3 ** 2"}
+{"id":"fork/interpreter/tokenizer_test.go:69:14","src":"x = 5 /* inline comment */ + 3"}
+{"id":"fork/interpreter/tokenizer_test.go:74:14","src":"/* \n multiline \n comment \n */ x = 10"}
+{"id":"fork/interpreter/tokenizer_test.go:79:14","src":"// single line\n/* multiline */ x = 1"}
+{"id":"fork/interpreter/tokenizer_test.go:122:11","src":"\n\t// This is a comment\n\tx = 5 // This is an end-of-line comment\n\t// Another comment\n\ty = 10\n\t"}
+{"id":"fork/interpreter/tokenizer_test.go:154:32","src":"String with \n newline"}
+{"id":"fork/uddin_test.go:27:14","src":"print(\"Hello, World!\")"}
+{"id":"fork/uddin_test.go:32:14","src":"print(5 + 3)"}
+{"id":"fork/uddin_test.go:37:12","src":"x = 10\nprint(x * 2)"}
+{"id":"fork/uddin_test.go:43:14","src":"print(\"Hello\" + \" \" + \"World\")"}
+{"id":"fork/uddin_test.go:136:37","src":"print(x)"}
+{"id":"fork/uddin_test.go:166:37","src":"\n\t\tprint(name)\n\t\tprint(age)\n\t\tprint(active)\n\t"}
+{"id":"fork/uddin_test.go:218:35","src":"\n\t\tx = 5\n\t\ty = 10\n\t\tprint(x + y)\n\t"}
+{"id":"fork/uddin_test.go:283:12","src":"\n\t\tfun add(a, b):\n\t\t\treturn a + b\n\t\tend\n\n\t\tresult = add(5, 3)\n\t\tprint(result)\n\t"}
+{"id":"fork/uddin_test.go:313:12","src":"\n\t\tx = 10\n\t\tif (x > 5) then:\n\t\t\tprint(\"x is greater than 5\")\n\t\telse:\n\t\t\tprint(\"x is not greater than 5\")\n\t\tend\n\n\t\tfor (i in range(3)):\n\t\t\tprint(\"Loop: \" + str(i))\n\t\tend\n\t"}
+{"id":"fork/uddin_test.go:356:12","src":"\n\t\t// Array operations\n\t\tarr = [1, 2, 3, 4, 5]\n\t\tprint(\"Array length: \" + str(len(arr)))\n\t\tprint(\"First element: \" + str(arr[0]))\n\n\t\t// Map operations\n\t\tperson = {\"name\": \"John\", \"age\": 30}\n\t\tprint(\"Name: \" + person[\"name\"])\n\t\tprint(\"Age: \" + str(person[\"age\"]))\n\t"}
+{"id":"fork/uddin_test.go:403:32","src":"print(undefined_variable)"}
+{"id":"fork/uddin_test.go:427:12","src":"x = 5\nif (x > 0) then:\n    print(\"positive\")\nend"}
+{"id":"fork/uddin_test.go:431:12","src":"result = (x + y) * 2 - z / 3"}
+{"id":"fork/uddin_test.go:475:12","src":"x = 10\ny = 20\nresult = x + y"}
+{"id":"fork/uddin_test.go:542:12","src":"x = 5\ny = 3\nresult = x * y + 2"}
+{"id":"fork/uddin_test.go:546:12","src":"fun double(n): return n * 2 end\nresult = double(21)"}

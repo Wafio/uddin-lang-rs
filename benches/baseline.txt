@@ -1,0 +1,9 @@
+# Instructions of one run per script (benches/measure.sh), at the commit that added the machine. A change that
+# moves a number by more than 2 % needs a reason.
+simple          2065
+no_match        2324
+request_vars    4884
+string_ops      31698
+closure_calls   25953
+loop_20         49976
+map_access      11923

@@ -1,0 +1,7 @@
+s = ""
+i = 0
+while (i < 8):
+    s = s + str(i) + ","
+    i += 1
+end
+n = len(s)

@@ -1,0 +1,6 @@
+total = 0
+i = 0
+while (i < 20):
+    total += i * 2
+    i += 1
+end

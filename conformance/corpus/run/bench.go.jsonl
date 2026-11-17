@@ -1,0 +1,6 @@
+{"id":"bench/simple","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"bench/no_match","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"bench/header_query","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 2:5: can't return at top level","print_b64":""}
+{"id":"bench/regex_cidr","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 2:5: can't return at top level","print_b64":""}
+{"id":"bench/json_callback","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 4:5: can't return at top level","print_b64":""}
+{"id":"bench/loop","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 6:5: can't return at top level","print_b64":""}

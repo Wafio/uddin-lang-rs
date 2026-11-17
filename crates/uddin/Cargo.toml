@@ -1,0 +1,15 @@
+[package]
+name = "uddin"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde_json.workspace = true
+uddin-std.workspace = true
+uddin-syntax.workspace = true
+uddin-vm.workspace = true
+
+[lints]
+workspace = true

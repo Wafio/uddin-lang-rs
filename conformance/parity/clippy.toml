@@ -1,0 +1,1 @@
+# This tool reads and writes files by design; the repo-level clippy.toml keeps files out of the library crates.

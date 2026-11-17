@@ -1,0 +1,25 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "conformance/parity", "benches"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+jiff = { version = "=0.2.39", default-features = false, features = ["std", "tz-system", "tzdb-zoneinfo", "tzdb-concatenated"] }
+memchr = "=2.8.3"
+regex-automata = "=0.4.18"
+regex-syntax = "=0.8.11"
+uddin = { path = "crates/uddin" }
+uddin-std = { path = "crates/uddin-std" }
+uddin-syntax = { path = "crates/uddin-syntax" }
+uddin-vm = { path = "crates/uddin-vm" }
+uddin-waf = { path = "crates/uddin-waf" }
+# arbitrary_precision: a case line may carry a request context whose numbers, 1e400 for one, no f64 holds.
+serde_json = { version = "=1.0.154", features = ["arbitrary_precision", "raw_value"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

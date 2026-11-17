@@ -1,0 +1,6 @@
+{"id":"bench/simple","ok":true,"stage":null,"forbidden":[]}
+{"id":"bench/no_match","ok":true,"stage":null,"forbidden":[]}
+{"id":"bench/header_query","ok":true,"stage":null,"forbidden":[]}
+{"id":"bench/regex_cidr","ok":true,"stage":null,"forbidden":[]}
+{"id":"bench/json_callback","ok":true,"stage":null,"forbidden":[]}
+{"id":"bench/loop","ok":true,"stage":null,"forbidden":[]}

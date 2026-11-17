@@ -1,0 +1,3 @@
+{"id":"timing/scan_loop","src":"s = \"a\" * 500000\nwhile (true):\n    x = contains(s, \"b\")\nend\n"}
+{"id":"timing/scan_loop_in_a_call","src":"s = \"a\" * 500000\nfun f():\n    while (true):\n        x = contains(s, \"b\")\n    end\nend\nf()\n"}
+{"id":"timing/scan_loop_caught","src":"s = \"a\" * 500000\ntry:\n    while (true):\n        x = contains(s, \"b\")\n    end\ncatch (e):\n    print(\"caught\")\nend\nprint(\"after\")\n"}

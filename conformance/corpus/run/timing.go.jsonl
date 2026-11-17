@@ -1,0 +1,3 @@
+{"id":"timing/scan_loop","outcome":"limit","verdict":"","limit":"timeout","error_class":"limit","error":"3:21: execution stopped: canceled","print_b64":"","timing":true}
+{"id":"timing/scan_loop_in_a_call","outcome":"limit","verdict":"","limit":"timeout","error_class":"limit","error":"4:25: execution stopped: canceled","print_b64":"","timing":true}
+{"id":"timing/scan_loop_caught","outcome":"limit","verdict":"","limit":"timeout","error_class":"limit","error":"4:25: execution stopped: canceled","print_b64":"","timing":true}

@@ -1,0 +1,82 @@
+{"id":"engine/custom_rules_budget_internal_test.go:12:83","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_concurrency_test.go:21:20","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_concurrency_test.go:22:20","outcome":"ok","verdict":"block","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:97:12","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 2:5: lower() requires a string","print_b64":"","clock":true}
+{"id":"engine/custom_rules_sandbox_test.go:123:81","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:173:18","outcome":"limit","verdict":"","limit":"op_limit","error_class":"limit","error":"2:8: execution stopped: op_limit","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:174:18","outcome":"limit","verdict":"","limit":"op_limit","error_class":"limit","error":"4:17: execution stopped: op_limit","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:175:18","outcome":"limit","verdict":"","limit":"call_depth","error_class":"limit","error":"2:12: execution stopped: call_depth","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:176:18","outcome":"limit","verdict":"","limit":"value_size","error_class":"limit","error":"3:11: execution stopped: value_size","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:215:22","outcome":"error","verdict":"log","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:227:19","outcome":"limit","verdict":"","limit":"value_depth","error_class":"limit","error":"5:8: execution stopped: value_depth","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:228:19","outcome":"limit","verdict":"","limit":"value_depth","error_class":"limit","error":"5:1: execution stopped: value_depth","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:229:19","outcome":"limit","verdict":"","limit":"op_limit","error_class":"limit","error":"9:11: execution stopped: op_limit","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:230:19","outcome":"limit","verdict":"","limit":"op_limit","error_class":"limit","error":"7:11: execution stopped: op_limit","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:253:24","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"5:15: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:254:13","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:255:26","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 3:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:256:19","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"4:13: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:257:18","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"6:11: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:258:18","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:259:22","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:260:29","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:5: execution stopped: regex_size","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:301:16","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 2:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:302:16","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 6:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:303:16","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 3:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:304:16","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:305:16","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:358:12","outcome":"error","verdict":"","limit":"","error_class":"value","error":"value error at 4:27: subscript 1 out of range","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:377:14","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:3: name \"drop\" not found","print_b64":""}
+{"id":"engine/custom_rules_sandbox_test.go:405:34","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"Cg=="}
+{"id":"engine/custom_rules_sandbox_test.go:405:51","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"QkxPQ0sK"}
+{"id":"engine/custom_rules_sandbox_test.go:411:79","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 2:1: can't return at top level","print_b64":"Cg=="}
+{"id":"engine/custom_rules_test.go:237:12","outcome":"ok","verdict":"block","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_test.go:308:12","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_test.go:330:17","outcome":"ok","verdict":"allow","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_test.go:375:12","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/custom_rules_test.go:388:17","outcome":"error","verdict":"allow","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_test.go:395:15","outcome":"error","verdict":"log","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_test.go:422:33","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/custom_rules_test.go:597:11","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:1: name \"name\" not found","print_b64":""}
+{"id":"engine/custom_rules_test.go:598:13","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:1: name \"admin\" not found","print_b64":""}
+{"id":"engine/custom_rules_test.go:599:11","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:1: name \"name\" not found","print_b64":""}
+{"id":"engine/custom_rules_test.go:621:45","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:1: name \"a\" not found","print_b64":""}
+{"id":"engine/custom_rules_test.go:666:30","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_content_incomplete_internal_test.go:17:11","outcome":"error","verdict":"","limit":"","error_class":"value","error":"value error at 4:12: subscript 1 out of range","print_b64":""}
+{"id":"engine/script_golden_test.go:213:50","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:332:45","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 1:7: + requires two integers, strings, arrays, or objects","print_b64":""}
+{"id":"engine/script_golden_test.go:333:53","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 2:1: can't return at top level","print_b64":""}
+{"id":"engine/script_golden_test.go:334:58","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:335:63","outcome":"error","verdict":"block","limit":"","error_class":"runtime","error":"runtime error at 1:1: can't return at top level","print_b64":""}
+{"id":"engine/script_golden_test.go:352:31","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:353:31","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:354:31","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 4:13: can only subscript string, array, or object","print_b64":""}
+{"id":"engine/script_golden_test.go:362:12","outcome":"ok","verdict":"log","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:370:58","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:371:58","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:374:48","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:375:48","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:376:45","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:377:45","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:378:47","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:379:43","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:385:51","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:405:51","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:406:52","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:407:59","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:408:43","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 1:12: can only subscript string, array, or object","print_b64":""}
+{"id":"engine/script_golden_test.go:409:40","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 1:12: can only subscript string, array, or object","print_b64":""}
+{"id":"engine/script_golden_test.go:411:102","outcome":"error","verdict":"","limit":"","error_class":"name","error":"name error at 1:3: name \"v\" not found","print_b64":""}
+{"id":"engine/script_golden_test.go:418:44","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:419:52","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:433:54","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:436:84","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:437:92","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:447:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:448:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:449:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:450:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:451:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:452:27","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:458:54","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"engine/script_golden_test.go:461:49","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 1:7: + requires two integers, strings, arrays, or objects","print_b64":""}

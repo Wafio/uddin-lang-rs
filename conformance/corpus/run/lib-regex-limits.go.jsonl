@@ -1,0 +1,105 @@
+{"id":"lib-regex-limits/size/literal_1022","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:7: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/size/literal_1023","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:7: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/size/literal_1024","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:7: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/size/literal_1025","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/literal_1026","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/literal_2048","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_340","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_340","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_341","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_341","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_342","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_342","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_500","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_500","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_511","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_511","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_512","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_512","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/group_alternation_513","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/starred_group_513","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/repeat_100","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/repeat_101","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/repeat_102","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/repeat_200","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/repeat_300","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/repeat_1000","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"1:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/nested_repeat","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UKZmFsc2UK"}
+{"id":"lib-regex-limits/size/pattern_too_long_for_the_ratio","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:7: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/pattern_at_the_ratio","outcome":"limit","verdict":"","limit":"regex_size","error_class":"limit","error":"2:5: execution stopped: regex_size","print_b64":""}
+{"id":"lib-regex-limits/size/invalid_pattern_is_not_sized","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"aW52YWxpZCByZWdleCBwYXR0ZXJuOiBlcnJvciBwYXJzaW5nIHJlZ2V4cDogbWlzc2luZyBjbG9zaW5nICk6IGAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKC4uLgo="}
+{"id":"lib-regex-limits/size/deep_nesting","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"aW52YWxpZCByZWdleCBwYXR0ZXJuOiBlcnJvciBwYXJzaW5nIHJlZ2V4cDogZXhwcmVzc2lvbiBuZXN0cyB0b28gZGVlcGx5OiBgKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKC4uLgp0cnVlCg=="}
+{"id":"lib-regex-limits/memory/charges_are_returned","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"3:9: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/big_pattern_repeated","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:9: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/pattern_charge_with_other_data","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UK"}
+{"id":"lib-regex-limits/memory/pattern_charge_with_other_data_multi","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"W10K"}
+{"id":"lib-regex-limits/memory/multi_costs_twice","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"bnVsbApbImIiXQo="}
+{"id":"lib-regex-limits/memory/find_all_reserve_26000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26100","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26100","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26200","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26200","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26205","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26205","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26210","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26210","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26213","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26213","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26214","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26214","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26215","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26215","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26220","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26220","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_26300","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_26300","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_27000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_27000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_reserve_100000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/split_reserve_100000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_every_position_1000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwMQo="}
+{"id":"lib-regex-limits/memory/replace_every_position_1000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MzAwMgo="}
+{"id":"lib-regex-limits/memory/find_all_every_position_5000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"NTAwMQo="}
+{"id":"lib-regex-limits/memory/replace_every_position_5000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTUwMDIK"}
+{"id":"lib-regex-limits/memory/find_all_every_position_10000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwMDEK"}
+{"id":"lib-regex-limits/memory/replace_every_position_10000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MzAwMDIK"}
+{"id":"lib-regex-limits/memory/find_all_every_position_20000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_every_position_20000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_every_position_26000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_every_position_26000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/find_all_every_position_100000","outcome":"limit","verdict":"","limit":"memory","error_class":"limit","error":"2:5: execution stopped: memory","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_every_position_100000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_100","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwCg=="}
+{"id":"lib-regex-limits/memory/find_100","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MQp0cnVlCg=="}
+{"id":"lib-regex-limits/memory/replace_1000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwMAo="}
+{"id":"lib-regex-limits/memory/find_1000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MQp0cnVlCg=="}
+{"id":"lib-regex-limits/memory/replace_10000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/find_10000","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MQp0cnVlCg=="}
+{"id":"lib-regex-limits/memory/replace_100000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/find_100000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:5: execution stopped: regex_work","print_b64":"MQo="}
+{"id":"lib-regex-limits/memory/replace_500000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/find_500000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:5: execution stopped: regex_work","print_b64":"MQo="}
+{"id":"lib-regex-limits/memory/replace_1000000","outcome":"limit","verdict":"","limit":"value_size","error_class":"limit","error":"2:5: execution stopped: value_size","print_b64":""}
+{"id":"lib-regex-limits/memory/find_1000000","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:5: execution stopped: regex_work","print_b64":"MQo="}
+{"id":"lib-regex-limits/memory/replace_value_size","outcome":"limit","verdict":"","limit":"value_size","error_class":"limit","error":"2:5: execution stopped: value_size","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_value_size_guard_empty_repl","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_guard_boundary","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwMDAwMAo="}
+{"id":"lib-regex-limits/memory/replace_guard_boundary_over","outcome":"limit","verdict":"","limit":"value_size","error_class":"limit","error":"2:5: execution stopped: value_size","print_b64":""}
+{"id":"lib-regex-limits/memory/replace_guard_caught","outcome":"limit","verdict":"","limit":"value_size","error_class":"limit","error":"3:9: execution stopped: value_size","print_b64":""}
+{"id":"lib-regex-limits/work/long_scan_no_match","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"bnVsbAo="}
+{"id":"lib-regex-limits/work/long_scan_no_match_is_match","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UK"}
+{"id":"lib-regex-limits/work/leftmost_stops_early","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"YWIKdHJ1ZQo="}
+{"id":"lib-regex-limits/work/loop_accumulates","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:9: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/loop_accumulates_small","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MTAwCg=="}
+{"id":"lib-regex-limits/work/quadratic_find_all","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/quadratic_replace","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/quadratic_split","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/quadratic_small","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MjAwCg=="}
+{"id":"lib-regex-limits/work/many_matches","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"4:5: execution stopped: regex_work","print_b64":"NTAwMAo="}
+{"id":"lib-regex-limits/work/body_like_input","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"2:5: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/body_like_small_input","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"ZmFsc2UK"}
+{"id":"lib-regex-limits/work/compile_work_alone","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"3:9: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/compile_work_multi","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"3:9: execution stopped: regex_work","print_b64":""}
+{"id":"lib-regex-limits/work/budget_is_per_run_not_per_call","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"bnVsbApudWxsCm51bGwKbnVsbApudWxsCg=="}
+{"id":"lib-regex-limits/work/caught_limit_still_ends_the_run","outcome":"limit","verdict":"","limit":"regex_work","error_class":"limit","error":"3:11: execution stopped: regex_work","print_b64":""}

@@ -1,0 +1,26 @@
+{"id":"limits/nesting/ifs_1","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_100","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_253","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_254","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_255","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_256","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/ifs_257","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:5: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/ifs_300","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:5: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/for_loops_300","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:12: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/while_loops_300","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:12: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/try_blocks_300","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:1: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/catch_does_not_catch_it","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:5: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/catch_inside_the_nesting","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/not_reached","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"c2tpcHBlZAo="}
+{"id":"limits/nesting/after_the_blocks_end","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"b2sK"}
+{"id":"limits/nesting/calls_5_blocks_per_frame","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"2:5: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/calls_4_blocks_per_frame","outcome":"limit","verdict":"","limit":"call_depth","error_class":"limit","error":"5:5: execution stopped: call_depth","print_b64":""}
+{"id":"limits/nesting/calls_3_blocks_per_frame","outcome":"limit","verdict":"","limit":"call_depth","error_class":"limit","error":"4:5: execution stopped: call_depth","print_b64":""}
+{"id":"limits/nesting/calls_2_blocks_per_frame","outcome":"limit","verdict":"","limit":"call_depth","error_class":"limit","error":"3:5: execution stopped: call_depth","print_b64":""}
+{"id":"limits/nesting/calls_caught","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"6:11: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/mixed_300","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"258:5: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/mixed_250","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":""}
+{"id":"limits/nesting/loops_in_calls_40","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"8:8: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/loops_in_calls_400","outcome":"limit","verdict":"","limit":"nesting","error_class":"limit","error":"260:8: execution stopped: nesting","print_b64":""}
+{"id":"limits/nesting/loops_in_calls_3","outcome":"limit","verdict":"","limit":"call_depth","error_class":"limit","error":"2:5: execution stopped: call_depth","print_b64":""}
+{"id":"limits/nesting/function_bodies","outcome":"ok","verdict":"","limit":"","error_class":"","error":"","print_b64":"MQo="}

@@ -1,0 +1,105 @@
+{"id":"lib-regex-limits/size/literal_1022","src":"p = \"a\" * 1022\nprint(is_regex_match(p, \"a\" * 1022))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/literal_1023","src":"p = \"a\" * 1023\nprint(is_regex_match(p, \"a\" * 1023))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/literal_1024","src":"p = \"a\" * 1024\nprint(is_regex_match(p, \"a\" * 1024))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/literal_1025","src":"p = \"a\" * 1025\nprint(is_regex_match(p, \"a\" * 1025))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/literal_1026","src":"p = \"a\" * 1026\nprint(is_regex_match(p, \"a\" * 1026))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/literal_2048","src":"p = \"a\" * 2048\nprint(is_regex_match(p, \"a\" * 2048))\nprint(regex_find(\"b\", p))\n"}
+{"id":"lib-regex-limits/size/group_alternation_340","src":"p = \"(a|b)\" * 340\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_340","src":"p = \"(?:ab*)\" * 340\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_341","src":"p = \"(a|b)\" * 341\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_341","src":"p = \"(?:ab*)\" * 341\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_342","src":"p = \"(a|b)\" * 342\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_342","src":"p = \"(?:ab*)\" * 342\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_500","src":"p = \"(a|b)\" * 500\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_500","src":"p = \"(?:ab*)\" * 500\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_511","src":"p = \"(a|b)\" * 511\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_511","src":"p = \"(?:ab*)\" * 511\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_512","src":"p = \"(a|b)\" * 512\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_512","src":"p = \"(?:ab*)\" * 512\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/group_alternation_513","src":"p = \"(a|b)\" * 513\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/starred_group_513","src":"p = \"(?:ab*)\" * 513\nprint(is_regex_match(p, \"ab\"))\n"}
+{"id":"lib-regex-limits/size/repeat_100","src":"print(is_regex_match(\"a{100}\", \"a\"))\nprint(is_regex_match(\"(?:a{100})\", \"a\"))\nprint(is_regex_match(\"(?:ab){100,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/repeat_101","src":"print(is_regex_match(\"a{101}\", \"a\"))\nprint(is_regex_match(\"(?:a{101})\", \"a\"))\nprint(is_regex_match(\"(?:ab){101,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/repeat_102","src":"print(is_regex_match(\"a{102}\", \"a\"))\nprint(is_regex_match(\"(?:a{102})\", \"a\"))\nprint(is_regex_match(\"(?:ab){102,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/repeat_200","src":"print(is_regex_match(\"a{200}\", \"a\"))\nprint(is_regex_match(\"(?:a{200})\", \"a\"))\nprint(is_regex_match(\"(?:ab){200,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/repeat_300","src":"print(is_regex_match(\"a{300}\", \"a\"))\nprint(is_regex_match(\"(?:a{300})\", \"a\"))\nprint(is_regex_match(\"(?:ab){300,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/repeat_1000","src":"print(is_regex_match(\"a{1000}\", \"a\"))\nprint(is_regex_match(\"(?:a{1000})\", \"a\"))\nprint(is_regex_match(\"(?:ab){1000,}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/nested_repeat","src":"print(is_regex_match(\"(?:a{10}){10}\", \"a\"))\nprint(is_regex_match(\"(?:a{10}){10}{1}\", \"a\"))\n"}
+{"id":"lib-regex-limits/size/pattern_too_long_for_the_ratio","src":"p = \"x\" * 4100\nprint(is_regex_match(p, \"a\"))\n"}
+{"id":"lib-regex-limits/size/pattern_at_the_ratio","src":"p = \"x\" * 4099\nx = is_regex_match(p, \"a\")\nprint(x)\n"}
+{"id":"lib-regex-limits/size/invalid_pattern_is_not_sized","src":"p = \"(\" * 3000\nprint(regex_match(\"a\", p))\n"}
+{"id":"lib-regex-limits/size/deep_nesting","src":"p = \"(\" * 1500 + \")\" * 1500\nprint(regex_match(\"a\", p))\nq = \"(?:\" * 900 + \"a\" + \")\" * 900\nprint(regex_match(\"a\", q))\n"}
+{"id":"lib-regex-limits/memory/charges_are_returned","src":"i = 0\nwhile (i < 2000):\n    x = regex_find_all(\"abc\", \"b\")\n    y = regex_replace(\"abc\", \"b\", \"c\")\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/memory/big_pattern_repeated","src":"p = \"a\" * 1000\ni = 0\nwhile (i < 100):\n    x = regex_find_all(\"abc\", p)\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/memory/pattern_charge_with_other_data","src":"l = range(30000)\np = \"a\" * 1000\nprint(is_regex_match(p, \"b\"))\n"}
+{"id":"lib-regex-limits/memory/pattern_charge_with_other_data_multi","src":"l = range(30000)\np = \"a\" * 1000\nprint(regex_find_all(\"b\", p))\n"}
+{"id":"lib-regex-limits/memory/multi_costs_twice","src":"l = range(40000)\np = \"a\" * 500\nprint(regex_find(\"b\", p))\nprint(regex_split(\"b\", p))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26000","src":"s = \"a\" * 26000\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26000","src":"s = \"a\" * 26000\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26100","src":"s = \"a\" * 26100\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26100","src":"s = \"a\" * 26100\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26200","src":"s = \"a\" * 26200\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26200","src":"s = \"a\" * 26200\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26205","src":"s = \"a\" * 26205\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26205","src":"s = \"a\" * 26205\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26210","src":"s = \"a\" * 26210\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26210","src":"s = \"a\" * 26210\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26213","src":"s = \"a\" * 26213\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26213","src":"s = \"a\" * 26213\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26214","src":"s = \"a\" * 26214\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26214","src":"s = \"a\" * 26214\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26215","src":"s = \"a\" * 26215\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26215","src":"s = \"a\" * 26215\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26220","src":"s = \"a\" * 26220\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26220","src":"s = \"a\" * 26220\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_26300","src":"s = \"a\" * 26300\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_26300","src":"s = \"a\" * 26300\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_27000","src":"s = \"a\" * 27000\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_27000","src":"s = \"a\" * 27000\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_reserve_100000","src":"s = \"a\" * 100000\nx = regex_find_all(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/split_reserve_100000","src":"s = \"a\" * 100000\nx = regex_split(s, \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_1000","src":"s = \"a\" * 1000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_1000","src":"s = \"a\" * 1000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_5000","src":"s = \"a\" * 5000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_5000","src":"s = \"a\" * 5000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_10000","src":"s = \"a\" * 10000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_10000","src":"s = \"a\" * 10000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_20000","src":"s = \"a\" * 20000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_20000","src":"s = \"a\" * 20000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_26000","src":"s = \"a\" * 26000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_26000","src":"s = \"a\" * 26000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_all_every_position_100000","src":"s = \"a\" * 100000\nx = regex_find_all(s, \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_every_position_100000","src":"s = \"a\" * 100000\nx = regex_replace(s, \"\", \"--\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_100","src":"s = \"a\" * 100\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_100","src":"s = \"a\" * 100\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_1000","src":"s = \"a\" * 1000\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_1000","src":"s = \"a\" * 1000\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_10000","src":"s = \"a\" * 10000\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_10000","src":"s = \"a\" * 10000\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_100000","src":"s = \"a\" * 100000\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_100000","src":"s = \"a\" * 100000\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_500000","src":"s = \"a\" * 500000\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_500000","src":"s = \"a\" * 500000\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_1000000","src":"s = \"a\" * 1000000\nx = regex_replace(s, \"a\", \"b\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/find_1000000","src":"s = \"a\" * 1000000\nx = regex_find(s, \"a\")\nprint(len(x))\ny = regex_match(s, \"^a+$\")\nprint(y)\n"}
+{"id":"lib-regex-limits/memory/replace_value_size","src":"s = \"a\" * 1000000\nx = regex_replace(s, \"a\", \"bb\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_value_size_guard_empty_repl","src":"s = \"a\" * 1000000\nx = regex_replace(s, \"a\", \"\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_guard_boundary","src":"s = \"a\" * 1000\nx = regex_replace(s, \"a\", \"b\" * 1000)\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_guard_boundary_over","src":"s = \"a\" * 1024\nx = regex_replace(s, \"a\", \"b\" * 1024)\nprint(len(x))\n"}
+{"id":"lib-regex-limits/memory/replace_guard_caught","src":"s = \"a\" * 1500\ntry:\n    x = regex_replace(s, \"q\", \"b\" * 1500)\n    print(len(x))\ncatch (e):\n    print(\"caught\")\nend\nprint(\"after\")\n"}
+{"id":"lib-regex-limits/work/long_scan_no_match","src":"s = \"a\" * 100000\nprint(regex_find(s, \"b\"))\n"}
+{"id":"lib-regex-limits/work/long_scan_no_match_is_match","src":"s = \"a\" * 100000\nprint(is_regex_match(\"b\", s))\n"}
+{"id":"lib-regex-limits/work/leftmost_stops_early","src":"s = \"ab\" + \"a\" * 1000000\nprint(regex_find(s, \"ab\"))\nprint(is_regex_match(\"ab\", s))\n"}
+{"id":"lib-regex-limits/work/loop_accumulates","src":"s = \"a\" * 20000\ni = 0\nwhile (i < 100):\n    x = regex_find(s, \"b\")\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/work/loop_accumulates_small","src":"s = \"abcdefghij\" * 10\ni = 0\nwhile (i < 100):\n    x = regex_find(s, \"[a-c]+j\")\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/work/quadratic_find_all","src":"s = \"a\" * 16384\nx = regex_find_all(s, \"(?:a*b)|a\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/work/quadratic_replace","src":"s = \"a\" * 16384\nx = regex_replace(s, \"(?:a*b)|a\", \"x\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/work/quadratic_split","src":"s = \"a\" * 16384\nx = regex_split(s, \"(?:a*b)|a\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/work/quadratic_small","src":"s = \"a\" * 200\nx = regex_find_all(s, \"(?:a*b)|a\")\nprint(len(x))\n"}
+{"id":"lib-regex-limits/work/many_matches","src":"s = \"ab\" * 5000\nx = regex_find_all(s, \"a\")\nprint(len(x))\ny = regex_split(s, \"b\")\nprint(len(y))\nz = regex_replace(s, \"a\", \"c\")\nprint(len(z))\n"}
+{"id":"lib-regex-limits/work/body_like_input","src":"s = \"word1 word2 \" * 342\nx = is_regex_match(\"(?i)(?:\\\\w+\\\\s*){50}x\", s)\nprint(x)\n"}
+{"id":"lib-regex-limits/work/body_like_small_input","src":"s = \"word1 word2 \" * 4\nx = is_regex_match(\"(?i)(?:\\\\w+\\\\s*){50}x\", s)\nprint(x)\n"}
+{"id":"lib-regex-limits/work/compile_work_alone","src":"i = 0\nwhile (i < 400):\n    x = is_regex_match(\"a{50}\", \"\")\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/work/compile_work_multi","src":"i = 0\nwhile (i < 400):\n    x = regex_find_all(\"\", \"a{50}\")\n    i += 1\nend\nprint(i)\n"}
+{"id":"lib-regex-limits/work/budget_is_per_run_not_per_call","src":"s = \"a\" * 5000\nprint(regex_find(s, \"b\"))\nprint(regex_find(s, \"b\"))\nprint(regex_find(s, \"b\"))\nprint(regex_find(s, \"b\"))\nprint(regex_find(s, \"b\"))\n"}
+{"id":"lib-regex-limits/work/caught_limit_still_ends_the_run","src":"s = \"a\" * 1000000\ntry:\n    print(regex_find(s, \"b\"))\ncatch (e):\n    print(\"caught\")\nend\nprint(\"after\")\n"}

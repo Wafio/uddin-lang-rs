@@ -1,0 +1,6 @@
+a = method == "GET"
+b = len(path) > 3
+c = ua == "curl"
+if (a and b and c) then:
+    x = 1
+end

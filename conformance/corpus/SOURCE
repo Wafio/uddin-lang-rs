@@ -1,0 +1,24 @@
+Inputs of the extraction (cmd/extract in ../oracle-go). Results are in the *.go.jsonl files next to the cases.
+
+fork-tests: the *_test.go files of the Go fork at commit 8aae46cc78f223f430c8804b7079e86be70ea75d
+  (interpreter/, the root uddin_test.go and cmd/*/), the same commit as ../oracle-go/SOURCE.
+examples: every .din file under examples/ and example_usages/ of that commit.
+engine-tests: the *_test.go files of internal/engine of the wafio-cp-backend repository at commit
+  99c94588f6662d59f60ca42c61b66274d5613287 that call EvalScriptRules, EvalScriptRulesWithBudget or CompileScript,
+  except custom_rules_bench_test.go. The engine files last changed at c91fde225494cadb91490085c00b88c600c6cd31.
+bench: the six scripts of custom_rules_bench_test.go in that repository, with the request context of that file.
+waf-ctx, limits, timing: written by hand in oracle-go/cmd/extract/handwritten.go, not taken from any file. waf-ctx
+  mirrors the tests of interpreter/fn_wafio_test.go of the fork and the context probes of script_golden_test.go of the
+  control plane, as scripts that run with the request context on the case line; limits holds the nesting limit at its
+  boundary; timing holds the scripts that only the 5 ms deadline stops.
+
+Cases per group (check, run):
+  fork-tests    340  281
+  engine-tests  101   82
+  bench           6    6
+  examples       53   28
+  waf-ctx       213  213
+  limits         26   26
+  timing          3    3
+
+Cases of the run corpus that carry a request context: bench 6, waf-ctx 185; every other case runs with an empty one.

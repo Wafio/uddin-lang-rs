@@ -1,0 +1,5 @@
+{"id":"lib-dates-clock/now/shape","ok":true,"stage":null,"forbidden":[]}
+{"id":"lib-dates-clock/now/arity","ok":true,"stage":null,"forbidden":[]}
+{"id":"lib-dates-clock/now/used_as_dates","ok":true,"stage":null,"forbidden":[]}
+{"id":"lib-dates-clock/now/time_is_increasing","ok":true,"stage":null,"forbidden":[]}
+{"id":"lib-dates-clock/now/two_calls_close","ok":true,"stage":null,"forbidden":[]}

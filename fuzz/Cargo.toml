@@ -1,0 +1,47 @@
+# Not a member of the workspace: cargo-fuzz builds it with a nightly toolchain and the libFuzzer entry point
+# needs `unsafe`, which the workspace forbids.
+[package]
+name = "uddin-fuzz"
+version = "0.0.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "=0.4.13"
+uddin = { path = "../crates/uddin" }
+uddin-syntax = { path = "../crates/uddin-syntax" }
+uddin-waf = { path = "../crates/uddin-waf" }
+
+[workspace]
+
+[[bin]]
+name = "lexer"
+path = "fuzz_targets/lexer.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "parser"
+path = "fuzz_targets/parser.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "check"
+path = "fuzz_targets/check.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "vm"
+path = "fuzz_targets/vm.rs"
+test = false
+doc = false
+bench = false

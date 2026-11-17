@@ -1,0 +1,3 @@
+{"id":"timing/scan_loop","ok":true,"stage":null,"forbidden":[]}
+{"id":"timing/scan_loop_in_a_call","ok":true,"stage":null,"forbidden":[]}
+{"id":"timing/scan_loop_caught","ok":true,"stage":null,"forbidden":[]}

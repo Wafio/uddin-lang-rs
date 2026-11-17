@@ -1,0 +1,6 @@
+repo: uddin-lang Go fork (module github.com/bonkzero404/uddin-lang), a local clone, not on GitHub
+branch: wafio-v1-backports
+commit: 8aae46cc78f223f430c8804b7079e86be70ea75d
+base: wafio-v1 at 14b95667ce68e74d2e2fd079cdcbd5aa706a4e70 plus two commits, 7126507 and 8aae46c
+copy: fork/ holds the output of git archive of that commit for go.mod, go.sum, LICENSE, uddin.go, interpreter and
+  internal/version, with the *_test.go files removed. Nothing else in fork/ is edited.

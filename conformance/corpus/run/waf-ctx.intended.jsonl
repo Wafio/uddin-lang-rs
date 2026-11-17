@@ -1,0 +1,1 @@
+{"id":"waf-ctx/ctx/for_in","outcome":"error","verdict":"","limit":"","error_class":"type","error":"type error at 1:11: for requires a string, array, or object to loop over, got unknown","print_b64":"","defects":["faults"]}
