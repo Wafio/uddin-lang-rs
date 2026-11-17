@@ -1,6 +1,7 @@
 name: ci
 
-# The gate of scripts/ci-local.sh, on every push to main and every pull request.
+# The gate of scripts/ci-local.sh, on every push to main and every pull request. It needs no Go; the live
+# comparison with the Go reference runs in oracle.yml.
 
 on:
   push:
@@ -21,12 +22,6 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
-      # The gate compares with the Go reference interpreter in conformance/oracle-go.
-      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5.6.0
-        with:
-          go-version: '1.26'
-          cache: true
-          cache-dependency-path: conformance/oracle-go/go.sum
       - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: |
@@ -35,8 +30,5 @@ jobs:
             target
           key: cargo-${{ runner.os }}-${{ hashFiles('rust-toolchain.toml', 'Cargo.lock') }}
           restore-keys: cargo-${{ runner.os }}-
-      # The gate builds the reference with GOPROXY=off, so its modules must be in the module cache first.
-      - run: go mod download
-        working-directory: conformance/oracle-go
       # rustup installs the toolchain of rust-toolchain.toml on first use.
       - run: scripts/ci-local.sh

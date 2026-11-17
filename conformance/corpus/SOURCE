@@ -13,7 +13,7 @@ waf-ctx, limits, timing: written by hand in oracle-go/cmd/extract/handwritten.go
   boundary; timing holds the scripts that only the 5 ms deadline stops.
 
 Time zone of the recording: Asia/Jakarta (TZ). The date builtins read the zone of the host, so the results of the
-lib-dates group hold in that zone only; scripts/ci-local.sh sets it.
+lib-dates group hold in that zone only; scripts/ci-local.sh and scripts/ci-oracle.sh set it.
 
 Cases per group (check, run):
   fork-tests    340  281

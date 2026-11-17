@@ -28,8 +28,9 @@ script sandbox profile that wafio-cp-backend exports (`shared/script/profile.jso
 
 - Rust 1.97.1, pinned by `channel` in `rust-toolchain.toml` (with `clippy` and `rustfmt`); the workspace uses
   edition 2024. rustup installs the pinned toolchain on first use.
-- Linux for the gate. The Go oracle runs on Linux only (see `conformance/README.md`).
-- For the gate: Go, the toolchain named in `conformance/oracle-go/go.mod` (`go 1.26.0`, `toolchain go1.26.11`).
+- Linux for the gate and for the oracle script. The Go oracle runs on Linux only (see `conformance/README.md`).
+- No Go for the gate (`scripts/ci-local.sh`). Only the oracle script, `scripts/ci-oracle.sh`, needs it: the
+  toolchain named in `conformance/oracle-go/go.mod` (`go 1.26.0`, `toolchain go1.26.11`).
 - For the short fuzz session of the gate and for fuzzing by hand: a nightly toolchain and `cargo-fuzz` (see
   `fuzz/README.md`); the gate skips the session when they are missing.
 - For `benches/measure.sh`, which is not part of the gate: valgrind (cachegrind) and Go.
@@ -42,21 +43,30 @@ The workspace has no build step beyond cargo.
 
 ## Test
 
-On a Linux host with `rustup` and Go, from the repo root:
+On a Linux host with `rustup`, from the repo root:
 
     scripts/ci-local.sh
 
-The gate runs in the time zone the corpus was recorded in (`TZ=Asia/Jakarta`), because the date builtins read the
-zone of the host. For `cargo test` by hand in another zone, set `TZ=Asia/Jakarta` too.
+This is the gate, and it needs no Go. It runs in the time zone the corpus was recorded in (`TZ=Asia/Jakarta`),
+because the date builtins read the zone of the host. For `cargo test` by hand in another zone, set
+`TZ=Asia/Jakarta` too.
 
 It checks that no agent material is tracked, then runs `cargo fmt --all --check`, `cargo clippy -D warnings` and
-`cargo test`, builds and tests the Go oracle, checks the recorded Go results of the corpus, compares `uddin check`
-with those results and with the oracle on 20,000 generated sources, runs every script of the run corpus through
-`uddin run` (with the `waf_*` builtins) and compares it with the recorded Go result and the intended differences of
-its group, compares runs of 10,000 generated programs under the production limits and under a small set, and fuzzes
-the machine for a short time when a nightly toolchain and `cargo-fuzz` are there (see `conformance/README.md` and
-`fuzz/README.md`). In a copy of the tree without `.git` the gate skips the agent-material check; run
-`scripts/check-ai.sh` in the checkout then.
+`cargo test`, compares `uddin check` with the recorded Go results of every corpus group, runs every script of the
+run corpus through `uddin run` (with the `waf_*` builtins) and compares it with the recorded Go result and the
+intended differences of its group, and fuzzes the machine for a short time when a nightly toolchain and
+`cargo-fuzz` are there (see `conformance/README.md` and `fuzz/README.md`). In a copy of the tree without `.git`
+the gate skips the agent-material check; run `scripts/check-ai.sh` in the checkout then.
+
+The steps that run the Go reference live are a second script, and they need Go:
+
+    scripts/ci-oracle.sh
+
+It builds, formats, vets and tests the oracle in `conformance/oracle-go`, checks that the oracle still gives the
+recorded Go results of the corpus, compares `uddin check` with the oracle on 20,000 generated sources, and
+compares runs of 10,000 generated programs under the production limits and under a small set. Run it when a
+change touches `crates/`, `conformance/` or `Cargo.lock`. CI runs it in `.github/workflows/oracle.yml` on such
+changes, once a week and on demand. It sets the same time zone as the gate.
 
 `fuzz/` holds the cargo-fuzz targets for the lexer, the parser and `check`; it is not part of the gate (see
 `fuzz/README.md`).
@@ -262,7 +272,8 @@ dependencies pinned to a tag. Tags are `vX.Y.Z`, set by hand with `git tag`; the
 - `conformance/`: the Go oracle, the corpus with the results Go gave, and the tools that compare this
   implementation with it. `fuzz/`: fuzz targets. `benches/`: the bench scripts and their measurement.
 - `profile/`: `sandbox-profile.json` and `SOURCE`.
-- `scripts/`: `ci-local.sh` (the gate), `fuzz.sh`, `check-ai.sh`.
+- `scripts/`: `ci-local.sh` (the gate, no Go), `ci-oracle.sh` (the steps that run the Go reference), `fuzz.sh`,
+  `check-ai.sh`.
 
 ## License
 

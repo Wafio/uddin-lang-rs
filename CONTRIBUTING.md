@@ -9,11 +9,19 @@ Thank you for looking at the code. This file says what a change needs before it 
 
 ## Build and test
 
-The requirements are in the README. The gate runs on Linux and needs Go for the reference interpreter it compares with:
+The requirements are in the README. The gate runs on Linux and needs no Go, because it compares with the results of the reference interpreter that are recorded in the corpus:
 
 ```sh
 scripts/ci-local.sh
 ```
+
+If your change touches `crates/`, `conformance/` or `Cargo.lock`, also run the checks that run the reference interpreter live. They need Go:
+
+```sh
+scripts/ci-oracle.sh
+```
+
+CI runs the gate on every pull request, and the second script on pull requests with such changes.
 
 ## Rules of this repository
 

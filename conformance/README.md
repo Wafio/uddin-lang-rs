@@ -21,7 +21,7 @@ correct when it gives the same results.
     ./oracle-go run   < cases.jsonl > results.jsonl
 
 The fork is not fetched from anywhere: `go.mod` replaces it with `./fork`. The other modules come from the module
-cache, pinned by `go.sum`; `GOPROXY=off` turns any fetch into a build failure, and `scripts/ci-local.sh` builds
+cache, pinned by `go.sum`; `GOPROXY=off` turns any fetch into a build failure, and `scripts/ci-oracle.sh` builds
 that way. The toolchain is the one `go.mod` names. The oracle runs on Linux only (see `print()` below).
 
 ## Input
@@ -269,5 +269,5 @@ One class of difference in `stage` is known: a source that is not valid UTF-8 an
 bad byte. Go parses up to the error and reports `parse`; this implementation checks the encoding first and
 reports `tokenize`. Both refuse the source.
 
-`scripts/ci-local.sh` runs `uddin check` over every corpus group against the recorded Go results, and 20,000
-generated sources from seed 1.
+`scripts/ci-local.sh` runs `uddin check` over every corpus group against the recorded Go results, without Go.
+`scripts/ci-oracle.sh` runs it against the oracle on 20,000 generated sources from seed 1.
