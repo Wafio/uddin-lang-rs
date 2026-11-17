@@ -35,5 +35,8 @@ jobs:
             target
           key: cargo-${{ runner.os }}-${{ hashFiles('rust-toolchain.toml', 'Cargo.lock') }}
           restore-keys: cargo-${{ runner.os }}-
+      # The gate builds the reference with GOPROXY=off, so its modules must be in the module cache first.
+      - run: go mod download
+        working-directory: conformance/oracle-go
       # rustup installs the toolchain of rust-toolchain.toml on first use.
       - run: scripts/ci-local.sh
