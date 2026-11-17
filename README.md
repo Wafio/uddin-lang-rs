@@ -69,8 +69,8 @@ change touches `crates/`, `conformance/`, `profile/`, `Cargo.toml`, `Cargo.lock`
 runs it in `.github/workflows/oracle.yml` on such changes (and on changes to that workflow), once a week and on
 demand. It sets the same time zone as the gate.
 
-`fuzz/` holds the cargo-fuzz targets for the lexer, the parser and `check`; it is not part of the gate (see
-`fuzz/README.md`).
+`fuzz/` holds four cargo-fuzz targets: `lexer`, `parser`, `check` and `vm`. The gate runs `vm` for `FUZZ_SECONDS`
+(default 30) when a nightly toolchain and `cargo-fuzz` are there; the other three run by hand (see `fuzz/README.md`).
 
 ## Run
 
@@ -237,8 +237,8 @@ a recommendation each:
 - `abs`, `-x` and the arithmetic operators wrap at 64 bits, so `abs(-9223372036854775807 - 1)` is negative.
   Recommend an error for `abs`; the operators wrapping is the language.
 - `5.5 % 2.5` takes the remainder of the truncated operands (1). Recommend documenting it.
-- `date_format_new` is documented with two arguments in `docs/docs/reference/builtin-functions.md` and written
-  with three. Recommend fixing the table of the documentation.
+- `date_format_new` is documented with two arguments in `docs/docs/reference/builtin-functions.md`, a file of the
+  Go fork that this repo does not carry, and written with three. Recommend fixing the table of that documentation.
 - `s[i]` of a string is one byte, which can be half of a character, where `for` reads characters. Recommend
   documenting it.
 - A `try` that catches an error thrown by a nested `catch` keeps the outer try's variables in sight in the reference
@@ -259,7 +259,7 @@ Also different, and not defects, because this is another implementation:
 ## Release
 
 There is no bundle and nothing to upload. The crates have `publish = false`, so a consumer takes them as Cargo git
-dependencies pinned to a tag. Tags are `vX.Y.Z`, set by hand with `git tag`; the repo has none yet.
+dependencies pinned to a tag. Tags are `vX.Y.Z`, set by hand with `git tag`; `v0.1.0` is the first.
 
 ## Layout
 
