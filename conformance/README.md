@@ -1,8 +1,9 @@
 # Conformance
 
-The Go interpreter is the reference for this repo. `oracle-go` runs sources through it the way the Wafio control
-plane and agent do, and `corpus/` holds sources together with the results Go gave. Another implementation is
-correct when it gives the same results.
+The Go interpreter is the reference for this repo. `oracle-go` runs sources through it the way the Go control plane
+and the Go agent of version 1 ran script rules, and `corpus/` holds sources together with the results Go gave. The
+agent of version 2 does not call Go: it runs this interpreter in its own process (crate `uddin-waf`). This
+implementation is correct when it gives the same results as the reference.
 
     conformance/
       oracle-go/    Go module. fork/ is a copy of the Go fork, main.go the command, internal/oracle the logic,
@@ -63,10 +64,10 @@ difference in `stage` alone is worth reporting, not failing.
 
     oracle-go run [-profile FILE] [-runs 8] [-deadline-ms 0]
 
-A case runs as `engine/script_sandbox.go` and `engine/custom_rules.go` run a script rule: the source is checked as
-above, then executed by `NewSandboxed` with the limits of the profile, and the verdicts of `waf_return`,
-`waf_block`, `waf_allow` and `waf_log` go to a sink that keeps the first one written. Print output is captured,
-where the agent discards it. A source that fails the check is not run.
+A case runs as the Go agent of version 1 ran a script rule (`engine/script_sandbox.go` and `engine/custom_rules.go`
+of the control plane repository): the source is checked as above, then executed by `NewSandboxed` with the limits of
+the profile, and the verdicts of `waf_return`, `waf_block`, `waf_allow` and `waf_log` go to a sink that keeps the
+first one written. Print output is captured, where the agent discards it. A source that fails the check is not run.
 
 The optional `ctx` object sets the request. Absent keys are an empty string, 0, no headers, no detections, no
 JSON body, no fields.
@@ -81,9 +82,9 @@ JSON body, no fields.
 | `fields` | object of strings | `waf_field(name)` returns the entry of that name, `""` when absent |
 | `field_values` | object of arrays of strings | `waf_values(name)` returns the entry of that name, `[]` when absent |
 
-`fields` and `field_values` replace the resolver of GUI rule conditions in the agent, which this module does not
-carry. The variables are built as `engine.scriptVars` builds them: `method path query ip country ua body score
-action` and `_waf_ctx`. `_waf_ctx` is a Go `map[string]any`, which is not a uddin map: no script operation can use
+`fields` and `field_values` replace the resolver of GUI rule conditions in the Go agent, which this module does not
+carry. The variables are built as `engine.scriptVars` of the Go agent builds them: `method path query ip country ua
+body score action` and `_waf_ctx`. `_waf_ctx` is a Go `map[string]any`, which is not a uddin map: no script operation can use
 it, scalar entries included. A subscript or `len` is a type error, `for (k in _waf_ctx)` fails inside the
 interpreter, and `typeof` says `unknown`. Only the `waf_*` builtins read it, and they find it through the
 variable of that name, so a script that assigns its own `_waf_ctx` changes what they see.
@@ -121,7 +122,7 @@ its scripts only the deadline can stop, so it is recorded with 5.
 ### print()
 
 The fork's `print()` with no argument writes its newline to file descriptor 1 with a raw system call, even in a
-sandbox that has its own stdout. In production it goes to the agent's own stdout. Here it would land in the
+sandbox that has its own stdout. In the Go agent it went to the agent's own stdout. Here it would land in the
 result stream, so run mode points descriptor 1 at a pipe and puts what it reads, in order, into the captured
 output. The captured output is therefore what `print()` is meant to produce. At most 1 MiB written that way
 between two reads is kept.
@@ -168,7 +169,9 @@ The oracle needs Go on Linux. Stage the inputs into the ignored
     (cd conformance/oracle-go && go run ./cmd/extract -fork ../.stage/fork -engine ../.stage/engine)
     conformance/corpus.sh record
 
-Update `corpus/SOURCE` with the commits used.
+Update `corpus/SOURCE` with the commits used. The test files of the control plane's engine package that the
+extractor reads are mostly not in the public history of wafio-cp-backend (`corpus/SOURCE` says which are), so the
+`engine-tests` and `bench` groups cannot be extracted again from the public tree; their recorded cases stay as they are.
 
 ## Run comparison
 
@@ -229,6 +232,17 @@ one side of zero and stops the run on the other. A `fill` script repeats an oper
 its progress. The extractor takes the capacities a list grows through from the `append` of the Go toolchain that
 runs it, and the scans of the operation limit (`ops/`) from the element the limit fires at. A case that names
 a builtin of another group is not compared until that group is carried.
+
+## Manual tools
+
+Two scripts need Go and cargo on Linux and belong to neither gate script. Run them by hand after a change to the
+date or the regex builtins.
+
+- `dates-tz.sh [ZONE...]` runs the date builtins of the oracle and of this implementation under several time zones of
+  the host, half-hour and forty-five-minute offsets and changes of clock included, and compares the results. Its cases
+  (group `lib-dates-tz`) are written to a temporary directory, not to the corpus.
+- `regex-sweep.sh [PAIRS] [SEED]` compares the regex builtins on generated pairs of a pattern and a text, 20,000 pairs
+  and seed 1 by default (group `lib-regex-sweep`, also kept out of the corpus). It does not test the regex work budget.
 
 ## Acceptance comparison
 
