@@ -36,10 +36,17 @@ CI runs the gate on every pull request, and the second script on pull requests w
 - Say what the change does and how you checked it.
 - Commit messages and comments are plain English.
 - Do not commit secrets, local configuration, certificates or keys.
-- Do not add instruction files for coding assistants, or planning notes, to the repository. The gate refuses them.
+- `AGENTS.md` at the root is the one instruction file for coding assistants. Do not add another one, or planning notes; the gate refuses them.
 
 ## Licence of your contribution
 
 The project is under the MIT licence (`LICENSE`), and your contribution is under the same licence. Sign off every commit with `git commit -s`. The `Signed-off-by` line states that you wrote the change or have the right to send it, as described in the Developer Certificate of Origin (https://developercertificate.org).
 
 If part of a change comes from another project, say so in the pull request: the project, the copyright holder and the licence.
+
+## Work done with a coding assistant
+
+You may use a coding assistant. `AGENTS.md` holds the short form of these rules for it; tools that read another
+file can be pointed at that one. The person who opens the pull request has read the change, understands it and
+answers for it, and is the one who signs off the commits. A security report must be reproduced before it is sent: a finding that
+nobody ran is not a report.
