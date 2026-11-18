@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-ai_files='(^|/)(AGENTS|CLAUDE|GEMINI)\.md$|(^|/)\.claude/|copilot-instructions|port-status|PORTING\.md'
+ai_files='(^|/)(CLAUDE|GEMINI)\.md$|/AGENT[S]\.md$|(^|/)\.claude/|copilot-instructions|port-status|PORTING\.md'
 ai_ids='(^|[^A-Za-z0-9_\\-])(K-[0-9]{2,3}|(CU|SB|TU|CF|WP|DEC|FSD|BR)-[0-9]+|OD-U?[0-9]+|RK-U?[0-9]+|[MDSF]-[0-9]{1,2}|U[0-6]|[Ww]ave[- ]?[0-9]+)([^0-9A-Za-z_]|$)'
 
 # No \b (macOS git grep -E matches nothing with it) and no grep -q after a pipe (SIGPIPE under pipefail).
