@@ -1,0 +1,19 @@
+# Dependabot keeps the Cargo dependencies and the pinned actions of the workflows current. The Go module under
+# conformance/oracle-go is a pinned copy of the reference interpreter and is not updated.
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: cargo
+    directory: /fuzz
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
