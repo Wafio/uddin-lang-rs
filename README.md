@@ -1,5 +1,7 @@
 # uddin-lang-rs
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16872/badge)](https://www.bestpractices.dev/projects/16872) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Wafio/uddin-lang-rs/badge)](https://scorecard.dev/viewer/?uri=github.com/Wafio/uddin-lang-rs)
+
 A Rust implementation of the uddin script language, ported from a Go interpreter, for running script rules inside
 the Wafio WAF agent without a separate process. It is a library and a small command line; it runs wherever its
 embedder runs.
