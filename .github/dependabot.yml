@@ -1,17 +1,22 @@
 # Dependabot keeps the Cargo dependencies and the pinned actions of the workflows current. The Go module under
 # conformance/oracle-go is a pinned copy of the reference interpreter and is not updated.
+#
+# fuzz/ has its own Cargo.lock but takes its dependencies from the workspace crates, so a version raised for one
+# directory has to be raised for the other too, or the build with --locked stops. group-by: dependency-name puts both
+# directories into one pull request for each dependency.
 version: 2
 updates:
   - package-ecosystem: cargo
-    directory: /
+    directories:
+      - /
+      - /fuzz
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
-  - package-ecosystem: cargo
-    directory: /fuzz
-    schedule:
-      interval: weekly
-    open-pull-requests-limit: 5
+    groups:
+      cargo:
+        patterns: ['*']
+        group-by: dependency-name
   - package-ecosystem: github-actions
     directory: /
     schedule:
