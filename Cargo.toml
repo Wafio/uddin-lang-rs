@@ -9,7 +9,7 @@ license = "MIT"
 publish = false
 
 [workspace.dependencies]
-jiff = { version = "=1.0.0", default-features = false, features = ["std", "tz-system", "tzdb-zoneinfo", "tzdb-concatenated"] }
+jiff = { version = "=1.0.2", default-features = false, features = ["std", "tz-system", "tzdb-zoneinfo", "tzdb-concatenated"] }
 memchr = "=2.8.3"
 regex-automata = "=0.4.18"
 regex-syntax = "=0.8.11"
