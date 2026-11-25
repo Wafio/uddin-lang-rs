@@ -12,7 +12,7 @@ publish = false
 jiff = { version = "=1.0.0", default-features = false, features = ["std", "tz-system", "tzdb-zoneinfo", "tzdb-concatenated"] }
 memchr = "=2.8.3"
 regex-automata = "=0.4.18"
-regex-syntax = "=0.8.11"
+regex-syntax = "=0.8.12"
 uddin = { path = "crates/uddin" }
 uddin-std = { path = "crates/uddin-std" }
 uddin-syntax = { path = "crates/uddin-syntax" }
